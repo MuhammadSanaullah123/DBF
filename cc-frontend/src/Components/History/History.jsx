@@ -171,7 +171,7 @@ const History = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
                                     }
                                   )}
                                   {Array.from(
-                                    { length: 5 - order.rating6 },
+                                    { length: 5 - order.rating },
                                     (_, index) => (
                                       <GrStar
                                         className={styles.startwhite}
