@@ -1,0 +1,478 @@
+.loginOuter {
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  width: 100%;
+  min-height: 100vh;
+}
+.relatie {
+  position: relative;
+}
+.googleButton {
+  background: none;
+  border: none;
+}
+.abss {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+}
+.loginMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1216px;
+  width: 100%;
+  padding: 5vh 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.webImg {
+  width: 400px;
+  height: auto;
+}
+
+.inputsArea {
+  display: flex;
+  flex-direction: column;
+  width: 515px;
+  margin-top: 40px;
+}
+
+.lginText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 61px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.emailInput {
+  margin-top: 16px;
+  width: 515px;
+  height: 58px;
+  background: #323232;
+  border-radius: 5px;
+  padding: 0 15px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #5e5e5e;
+  border: none;
+  outline: none;
+}
+
+.emailInput::placeholder {
+  color: #5e5e5e;
+}
+
+.remembertext {
+  margin-top: 10px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.6491px;
+  line-height: 23px;
+  text-decoration-line: underline;
+  margin-left: auto;
+  color: #00e5be;
+  cursor: pointer;
+}
+
+.rememberArea {
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.checkedInput {
+  width: 18px;
+  height: 18px;
+  background-color: #00e5be !important;
+}
+
+.rememText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.6491px;
+  line-height: 23px;
+  color: #757575;
+  margin-left: 13px;
+}
+
+.clikHere {
+  color: #00e5be;
+  text-decoration: underline;
+}
+
+.LowerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 43px;
+}
+
+.loginText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 176px;
+  height: 53px;
+  background: #00e5be;
+  box-shadow: 0px 4px 4px rgba(0, 229, 190, 0.25);
+  border-radius: 4px;
+  border: none;
+}
+
+.loginWith {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #c0c0c0;
+  margin-top: 44px;
+}
+
+.logosArea {
+  display: flex;
+  gap: 24px;
+  margin-top: 14px;
+}
+
+.Google {
+  width: 62px;
+  height: 50px;
+}
+
+.signup {
+  margin-top: 44px;
+  width: 298px;
+  height: 53px;
+  background: #00e5be;
+  box-shadow: 0px 4px 4px rgba(0, 229, 190, 0.25);
+  border-radius: 4px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+}
+
+.continu {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  width: 298px;
+  height: 53px;
+  color: #00e5be;
+  border: 2px solid #00e5be;
+  filter: drop-shadow(0px 4px 4px rgba(0, 229, 190, 0.25));
+  border-radius: 4px;
+  margin-top: 14px;
+  margin-bottom: 65px;
+  background: none;
+}
+
+@media (max-width: 1350px) {
+  .webImg {
+    width: 691px;
+    height: 192px;
+  }
+
+  .inputsArea {
+    margin-top: 30px;
+  }
+
+  .lginText {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .emailInput {
+    width: 470px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .inputsArea {
+    max-width: 470px;
+  }
+
+  .LowerSection {
+    padding-top: 30px;
+  }
+
+  .loginText {
+    width: 159px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .loginWith {
+    margin-top: 25px;
+    font-size: 26px;
+    line-height: 41px;
+  }
+
+  .signup {
+    width: 258px;
+    height: 49px;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  .continu {
+    font-size: 20px;
+    line-height: 27px;
+    width: 272px;
+    height: 49px;
+  }
+}
+
+@media (max-width: 992px) {
+  .webImg {
+    width: 500px;
+    height: 150px;
+  }
+
+  .inputsArea {
+    margin-top: 20px;
+  }
+
+  .lginText {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .emailInput {
+    width: 400px;
+    height: 45px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .inputsArea {
+    max-width: 400px;
+  }
+
+  .LowerSection {
+    padding-top: 20px;
+  }
+
+  .loginText {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .loginWith {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .signup {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .continu {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+    height: 40px;
+  }
+
+  .remembertext {
+    font-size: 13.6491px;
+    line-height: 16px;
+  }
+
+  .checkedInput {
+    width: 13px;
+    height: 13px;
+  }
+
+  .rememText {
+    font-size: 13.6491px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .webImg {
+    width: 375px;
+    height: 100px;
+  }
+
+  .inputsArea {
+    margin-top: 15px;
+  }
+
+  .lginText {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .emailInput {
+    width: 300px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .inputsArea {
+    max-width: 300px;
+  }
+
+  .LowerSection {
+    padding-top: 15px;
+  }
+
+  .loginText {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .loginWith {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .signup {
+    width: 140px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .continu {
+    font-size: 12px;
+    line-height: 15px;
+    width: 150px;
+    height: 30px;
+  }
+
+  .remembertext {
+    font-size: 12.6491px;
+    line-height: 14px;
+  }
+
+  .checkedInput {
+    width: 10px;
+    height: 10px;
+  }
+
+  .rememText {
+    font-size: 11.6491px;
+    line-height: 13px;
+  }
+}
+
+@media (max-width: 450px) {
+  .webImg {
+    width: 300px;
+    height: 90px;
+  }
+
+  .inputsArea {
+    margin-top: 15px;
+  }
+
+  .lginText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .emailInput {
+    width: 300px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .inputsArea {
+    max-width: 300px;
+  }
+
+  .LowerSection {
+    padding-top: 15px;
+  }
+
+  .loginText {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .loginWith {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .signup {
+    width: 140px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 25px;
+  }
+
+  .continu {
+    font-size: 12px;
+    line-height: 15px;
+    width: 150px;
+    height: 30px;
+  }
+
+  .remembertext {
+    font-size: 12.6491px;
+    line-height: 14px;
+  }
+
+  .checkedInput {
+    width: 10px;
+    height: 10px;
+  }
+
+  .rememText {
+    font-size: 11.6491px;
+    line-height: 13px;
+  }
+
+  .Google {
+    width: 47px;
+    height: 40px;
+  }
+}

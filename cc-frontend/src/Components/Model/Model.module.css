@@ -1,0 +1,697 @@
+.feedOuter {
+    display: flex;
+    flex-direction: column;
+    background: #1c1c1c;
+    width: 100%;
+}
+
+.postsArea {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+}
+
+.postsArea2 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.postCard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1095px;
+    padding: 0 15px 55px 15px;
+    margin: 44px auto 0 auto;
+    border-bottom: 1.73574px solid #343434;
+}
+
+
+.postCardInner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.userinfo {
+    display: flex;
+    align-items: center;
+}
+
+.imgBack {
+    width: 70px;
+    height: 70px;
+    background: radial-gradient(50% 50% at 50% 50%, #363636 0%, #373737 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.userImg {
+    width: 39.64px;
+    height: 39.64px;
+}
+
+.userNmae {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.0219px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-left: 13px;
+}
+
+
+.productArea {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    position: relative;
+    height: 952px;
+}
+
+
+.productimg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.produvtdetail {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 67px;
+    background: #292727;
+    border-radius: 0px 9px 34.71px 34.71px;
+    align-items: center;
+}
+
+.sizesArea {
+    margin-left: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.sizeHeading {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19.02px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.sizesNAMES {
+    width: 171px;
+    height: 35px;
+    background: rgba(71, 71, 71, 0.56);
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    color: #C2C2C2;
+    cursor: pointer;
+    margin-left: 31px;
+}
+
+.designernmae {
+    font-family: 'The Girl Next Door';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35.5738px;
+    line-height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00E5BE;
+    border-radius: 9px 0px 34.71px 9px;
+    width: 335px;
+    height: 67px;
+}
+
+.feedBackArea {
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedBackArea2 {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+
+.expressArea {
+    display: flex;
+    align-items: center;
+}
+
+.iconsArea {
+    display: flex;
+    align-items: center;
+    padding: 0 51px 0 20px;
+    border-right: 1.73574px solid #343434;
+    height: 59.51px;
+}
+
+.heaert {
+    font-size: 40px;
+    fill: #838282;
+}
+
+.notiIcon {
+    font-size: 40px;
+    fill: #838282;
+    margin-left: 24px;
+}
+
+.shareIcon {
+    font-size: 40px;
+    fill: #838282;
+    margin-left: 24px;
+}
+
+.starsArea {
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+
+}
+
+.startYellow {
+    font-size: 37px;
+    fill: #FFE601;
+    margin-right: 4px;
+}
+
+
+.startwhite {
+    font-size: 37px;
+    fill: #D9D9D9;
+    margin-right: 4px;
+}
+
+.modelTilt {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.21px;
+    line-height: 32px;
+    color: #CACBCB;
+    width: 146px;
+    height: 48px;
+    background: #434343;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.centerImage {
+    width: 100%;
+    max-width: 1095px;
+    padding: 50px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 392px;
+
+}
+
+.centImage {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.desihnNAME {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+}
+
+.marker {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.21px;
+    line-height: 37px;
+    color: #0094FF;
+}
+
+
+
+
+@media (max-width:1350px) {
+
+    .postCard {
+        max-width: 971px;
+        padding-bottom: 26px;
+        margin-top: 20px;
+    }
+
+
+    .centerImage {
+        max-width: 1000px;
+        height: 349px;
+    }
+
+
+    .centerImage {
+        max-width: 1000px;
+        height: 349px;
+    }
+
+
+    .productArea {
+        height: 800px;
+    }
+
+    .feedBackArea {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:1150px) {
+
+    .postCard {
+        max-width: 900px;
+        padding-bottom: 26px;
+        margin-top: 20px;
+    }
+
+    .centerImage {
+        max-width: 870px;
+        height: 281px;
+        padding: 30px 15px;
+    }
+
+    .centerImage {
+        max-width: 870px;
+        height: 281px;
+        padding: 30px 15px;
+    }
+
+
+    .productArea {
+        height: 700px;
+    }
+
+    .feedBackArea {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width:992px) {
+
+    .centerImage {
+        max-width: 666px;
+        height: 256px;
+    }
+
+    .desihnNAME {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    .marker {
+        font-size: 20.21px;
+        line-height: 23px;
+    }
+
+
+    .postsArea {
+        padding-top: 20px;
+    }
+
+    .postCard {
+        max-width: 700px;
+    }
+
+    .userNmae {
+        font-size: 18.0219px;
+        line-height: 23px;
+    }
+
+    .productArea {
+        height: 599px;
+    }
+
+
+    .produvtdetail {
+        border-radius: 0px 9px 19.71px 19.71px;
+    }
+
+
+    .sizesArea {
+        margin-left: 15px;
+    }
+
+    .sizeHeading {
+        font-size: 13.02px;
+        line-height: 20px;
+    }
+
+
+    .sizesNAMES {
+        width: 112px;
+        height: 35px;
+        font-size: 14px;
+        line-height: 22px;
+        margin-left: 18px;
+    }
+
+    .designernmae {
+        width: 230px;
+        font-size: 23.5738px;
+        line-height: 30px;
+    }
+
+    .feedBackArea {
+        padding: 10px;
+    }
+
+    .heaert {
+        font-size: 25px;
+
+    }
+
+    .notiIcon {
+        font-size: 25px;
+        margin-left: 12px;
+    }
+
+
+    .shareIcon {
+        font-size: 25px;
+        margin-left: 12px;
+    }
+
+    .iconsArea {
+        height: 45.51px;
+        padding-right: 20px;
+    }
+
+    .starsArea {
+        padding-left: 20px;
+    }
+
+    .startYellow {
+        font-size: 24px;
+        fill: #FFE601;
+        margin-right: 4px;
+    }
+
+    .startwhite {
+        font-size: 24px;
+        fill: #D9D9D9;
+        margin-right: 4px;
+    }
+
+
+    .modelTilt {
+        width: 104px;
+        height: 48px;
+        border-radius: 22px
+    }
+}
+
+
+
+@media (max-width:767px) {
+
+    .centerImage {
+        max-width: 500px;
+        height: 200px
+    }
+
+    .feedBackArea2 {
+        margin-top: 10px;
+    }
+
+    .postsArea {
+        padding-top: 20px;
+    }
+
+    .postCard {
+        max-width: 500px;
+    }
+
+    .imgBack {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .userImg {
+        width: 25.64px;
+        height: 25.64px;
+    }
+
+    .userNmae {
+        font-size: 13.0219px;
+        line-height: 22px;
+    }
+
+    .productArea {
+        height: 400px;
+        margin-top: 12px;
+    }
+
+
+    .produvtdetail {
+        border-radius: 0px 9px 13.71px 13.71px;
+        height: 45px;
+    }
+
+
+    .sizesArea {
+        margin-left: 10px;
+    }
+
+    .sizeHeading {
+        font-size: 9.02px;
+        line-height: 12px;
+    }
+
+
+    .sizesNAMES {
+        width: 84px;
+        height: 26px;
+        font-size: 9px;
+        line-height: 12px;
+        margin-left: 8px;
+    }
+
+    .designernmae {
+        width: 183px;
+        font-size: 15.5738px;
+        line-height: 18px;
+        height: 45px;
+    }
+
+    .feedBackArea {
+        padding: 10px;
+    }
+
+    .heaert {
+        font-size: 18px;
+
+    }
+
+    .notiIcon {
+        font-size: 18px;
+        margin-left: 8px;
+    }
+
+
+    .shareIcon {
+        font-size: 18px;
+        margin-left: 8px;
+    }
+
+    .iconsArea {
+        height: 29.51px;
+        padding-right: 20px;
+    }
+
+    .starsArea {
+        padding-left: 20px;
+    }
+
+    .startYellow {
+        font-size: 18px;
+        fill: #FFE601;
+        margin-right: 4px;
+    }
+
+    .startwhite {
+        font-size: 18px;
+        fill: #D9D9D9;
+        margin-right: 4px;
+    }
+
+
+    .modelTilt {
+        width: 80px;
+        height: 40px;
+        border-radius: 16px;
+        font-size: 17.21px;
+    }
+}
+
+
+
+
+@media (max-width:450px) {
+
+    .postsArea {
+        padding-top: 0;
+    }
+
+    .postCard {
+        max-width: 400px;
+    }
+
+    .imgBack {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .userImg {
+        width: 25.64px;
+        height: 25.64px;
+    }
+
+    .userNmae {
+        font-size: 13.0219px;
+        line-height: 22px;
+    }
+
+    .productArea {
+        height: 300px;
+        margin-top: 12px;
+    }
+
+
+    .produvtdetail {
+        border-radius: 0px 9px 13.71px 13.71px;
+        height: 35px;
+    }
+
+
+    .sizesArea {
+        margin-left: 5px;
+    }
+
+    .sizeHeading {
+        font-size: 8.02px;
+        line-height: 12px;
+    }
+
+
+    .sizesNAMES {
+        width: 74px;
+        height: 26px;
+        font-size: 8px;
+        line-height: 12px;
+        margin-left: 7px;
+    }
+
+    .designernmae {
+        width: 150px;
+        font-size: 12.5738px;
+        line-height: 18px;
+        height: 35px;
+        border-radius: 9px 0px 11.71px 9px;
+    }
+
+    .feedBackArea {
+        padding: 10px;
+    }
+
+    .heaert {
+        font-size: 16px;
+
+    }
+
+    .notiIcon {
+        font-size: 16px;
+        margin-left: 6px;
+    }
+
+
+    .shareIcon {
+        font-size: 16px;
+        margin-left: 6px;
+    }
+
+    .iconsArea {
+        height: 26.51px;
+        padding-right: 10px;
+    }
+
+    .starsArea {
+        padding-left: 10px;
+    }
+
+    .startYellow {
+        font-size: 16px;
+        fill: #FFE601;
+        margin-right: 4px;
+    }
+
+    .startwhite {
+        font-size: 16px;
+        fill: #D9D9D9;
+        margin-right: 4px;
+    }
+
+
+    .modelTilt {
+        width: 80px;
+        height: 40px;
+        border-radius: 16px;
+        font-size: 15.21px;
+    }
+
+.marker{
+    font-size: 16.21px;
+    line-height: 22px;
+}
+
+
+.desihnNAME{
+    font-size: 20px;
+    line-height: 25px;
+}
+
+
+}

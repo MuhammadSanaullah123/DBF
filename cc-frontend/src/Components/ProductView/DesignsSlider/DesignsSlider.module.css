@@ -1,0 +1,298 @@
+
+
+.designText{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+color: #FFFFFF;
+}
+
+.slidesMian{
+    width: 100%;
+    max-width: 1216px;
+    padding-top: 20px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.slidesCard{
+display: flex !important;
+flex-direction: column;
+width: 284.58px !important;
+margin-top: 17px;
+align-items: center !important;
+}
+
+
+.iamgArea{
+    width: 100%;
+     height: 283.11px;
+     position: relative;
+}
+
+.cardsImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.designersNmae{
+    font-family: 'The Girl Next Door';
+font-style: normal;
+font-weight: 400;
+font-size: 10.577px;
+line-height: 19px;
+color: #1C1C1C;
+background: #00E5BE;
+border-radius: 2.67592px 0px 10.3201px 2.67592px;
+width: 99.6px;
+height: 19.92px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.productName{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+color: #FFFFFF;
+margin-top: 9px;
+margin-right: auto;
+}
+
+.productPrice{
+    font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 39px;
+line-height: 53px;
+color: #FFFFFF;
+margin-right: auto;
+}
+
+.slidesArea{
+    width: 100%;
+}
+
+@media (max-width:1350px) {
+
+    .slidesArea{
+        max-width: 1035px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+.slidesCard{
+    width: 190px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+.iamgArea{
+    height: 190px;
+}
+
+
+.productName{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.productPrice{
+    font-size: 20px;
+    line-height: 27px;
+}
+
+
+.designText{
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+}
+
+@media (max-width:1100px) {
+
+
+    
+    .slidesArea{
+        max-width: 846px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+
+@media (max-width:920px) {
+
+
+    
+    .slidesArea{
+        max-width: 688px;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    
+    .slidesCard{
+        width: 150px !important;
+    }
+    
+    
+    .iamgArea{
+        height: 150px;
+    }
+    
+    .productName{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    
+    .productPrice{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    
+    .designText{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+
+}
+
+
+@media (max-width:780px) {
+
+
+    
+    .slidesArea{
+        max-width: 528px;
+    
+    }
+    
+    .slidesCard{
+        width: 150px !important;
+    }
+    
+    
+    .iamgArea{
+        height: 150px;
+    }
+    
+    .productName{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    
+    .productPrice{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    
+    .designText{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+
+}
+
+
+@media (max-width:600px) {
+
+
+    
+    .slidesArea{
+        max-width: 355px;
+    
+    }
+    
+    .slidesCard{
+        width: 150px !important;
+    }
+    
+    
+    .iamgArea{
+        height: 150px;
+    }
+    
+    .productName{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    
+    .productPrice{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    
+    .designText{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+
+}
+
+
+@media (max-width:440px) {
+
+
+    
+    .slidesArea{
+        max-width: 216px;
+    
+    }
+    
+    .slidesCard{
+        width: 150px !important;
+    }
+    
+    
+    .iamgArea{
+        height: 150px;
+    }
+    
+    .productName{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    
+    .productPrice{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    
+    
+    .designText{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+
+}

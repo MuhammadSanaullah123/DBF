@@ -1,0 +1,224 @@
+.NavLiks {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 20px !important;
+  line-height: 24px !important;
+  color: #e6e6e6 !important;
+  padding: 22px !important;
+  text-decoration: none;
+}
+.navLogo {
+  width: 120px;
+  height: auto;
+}
+.accountDropdown::after {
+  display: none !important;
+}
+
+.cartNumber {
+  color: #00e5eb;
+  position: relative;
+  top: -20px;
+  left: -5px;
+  border: 2px solid #00e5eb;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 1px;
+  text-align: center;
+}
+
+.accountDropdown {
+  background: none !important;
+  border: none !important;
+  /* width: 0px; */
+}
+
+.navOuter {
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 60px;
+}
+
+.iconsArea {
+  display: flex;
+  align-items: center;
+}
+
+.clocks {
+  width: 25px;
+  height: 25px;
+}
+
+.notificatArea {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.notiIcon {
+  font-size: 25px;
+  fill: #d9d9d9 !important;
+}
+
+.notitXT {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff !important;
+  margin-left: 14px;
+}
+
+.heaert {
+  font-size: 25px;
+
+  fill: #d9d9d9;
+  margin-left: 50px;
+}
+
+.tb2 {
+  font-size: 30px;
+  margin-left: 40px;
+  fill: #d9d9d9;
+}
+
+/* .basket{
+    width: 29px;
+    height: 26px;
+    fill: #D9D9D9;
+  
+} */
+
+.cartImg {
+  width: 29px;
+  height: 26px;
+  margin-left: 40px;
+}
+
+.line1 {
+  width: 18px;
+  margin-bottom: 3px;
+  background-color: white;
+  border-radius: 2px;
+  height: 4px;
+}
+
+.line2 {
+  width: 26px;
+  margin-bottom: 3px;
+  background-color: white;
+  border-radius: 2px;
+  height: 4px;
+}
+
+.line3 {
+  width: 10px;
+  margin-bottom: 0;
+  background-color: white;
+  border-radius: 2px;
+  height: 4px;
+}
+
+.togl {
+  margin-left: 10px;
+  margin-right: auto;
+  position: static;
+  top: 50%;
+
+  padding-left: 19px;
+  left: 0;
+  border: none !important;
+}
+
+.togl:focus {
+  box-shadow: none !important;
+}
+
+.contnt {
+  justify-content: space-between !important;
+  display: flex;
+}
+
+@media (max-width: 992px) {
+  .NavLiks {
+    text-align: center;
+    color: unset !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .clocks {
+    width: 20px;
+    height: 20px;
+  }
+
+  .notificatArea {
+    margin-left: 20px;
+  }
+
+  .notiIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .notitXT {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .heaert {
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  .tb2 {
+    font-size: 25px;
+    margin-left: 20px;
+  }
+
+  .cartImg {
+    margin-left: 20px;
+    width: 24px;
+    height: 20px;
+  }
+}
+
+.loginBtn {
+  outline: none;
+  background-color: #00e5be;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  border: 1px solid #00e5be;
+}
+
+@media screen and (max-width: 600px) {
+  .loginBtn {
+    padding: 5px 30px;
+  }
+
+  .togl {
+    padding: 0px;
+    margin-right: 10px;
+  }
+
+  .iconsArea {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .cartNumber {
+    left: -12%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .cartNumber {
+    left: -8%;
+  }
+}

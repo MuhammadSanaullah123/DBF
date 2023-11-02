@@ -1,0 +1,444 @@
+.signupMain {
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  width: 100%;
+  min-height: 100vh;
+}
+.bot {
+  color: #757575;
+  margin-top: 15px;
+}
+.signupInner {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+  width: 100%;
+  max-width: 1216px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.signupText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.inpuitsArea {
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  max-width: 856px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nameArea {
+  display: flex;
+  align-items: baseline;
+  margin-top: 21px;
+}
+.redd {
+  color: rgb(247, 0, 0);
+}
+.nameINer {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #e4e4e4;
+}
+
+.firstTextState {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #e4e4e4;
+  margin-bottom: 15px;
+}
+
+.selectInput {
+  width: 412px;
+  height: 58px;
+  outline: none;
+  background: #323232;
+  border-radius: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #5e5e5e;
+  line-height: 27px;
+  margin-top: 12px;
+  border: none;
+}
+
+.placesInput input {
+  width: 412px;
+  height: 42px;
+  outline: none;
+  /* background: #323232; */
+  border-radius: 5px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #5e5e5e;
+  line-height: 27px;
+  margin-top: 12px;
+  border: none;
+}
+
+.placesInput div:nth-child(1) {
+  width: 412px;
+  background-color: #323232;
+  border: #323232;
+  color: #5e5e5e;
+  z-index: 1;
+}
+
+.placesInput div:nth-child(2) {
+  background-color: #323232;
+  z-index: 0;
+}
+
+.placesInput input {
+  color: #5e5e5e;
+}
+
+.phoneInput {
+  width: 412px;
+  height: 58px;
+  outline: none;
+  background: #323232;
+  border-radius: 5px;
+  padding: 0 10px 0 29px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #5e5e5e;
+  line-height: 27px;
+  margin-top: 12px;
+  border: none;
+}
+.relatie {
+  position: relative;
+}
+.abs {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+}
+.phoneInput input {
+  color: #5e5e5e;
+  background: #323232;
+}
+.error {
+  font-size: 14px;
+  line-height: 20px;
+  color: "#ef4444";
+  font-weight: 600;
+  font-style: italic;
+}
+.nameInput {
+  width: 412px;
+  height: 58px;
+  outline: none;
+  background: #323232;
+  border-radius: 5px;
+  padding: 0 10px 0 29px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #5e5e5e;
+  line-height: 27px;
+  margin-top: 12px;
+  border: none;
+}
+
+.nameInput::placeholder {
+  color: #5e5e5e;
+}
+
+.lestInner {
+  display: flex;
+  flex-direction: column;
+}
+
+.lestInner:nth-child(2n) {
+  margin-left: 32px;
+}
+
+.emailArea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 21px;
+}
+
+.emailtext {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  color: #e4e4e4;
+}
+
+.emailInput {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #5e5e5e;
+  padding: 0 10px 0 29px;
+  margin-top: 12px;
+  background: #323232;
+  border-radius: 5px;
+  width: 856px;
+  height: 58px;
+  border: none;
+}
+
+.emailInput::placeholder {
+  background: #323232;
+}
+
+.agreeArea {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.checkInput {
+  width: 18px;
+  height: 18px;
+}
+
+.agreeText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.6491px;
+  line-height: 23px;
+  color: #757575;
+  margin-left: 13px;
+}
+
+.signUpButton {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  background: #00e5be;
+  box-shadow: 0px 4px 4px rgba(0, 229, 190, 0.25);
+  border-radius: 4px;
+  width: 176px;
+  height: 53px;
+  margin-top: 33px;
+  margin-bottom: 62px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1350px) {
+  .signupText {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .nameInput {
+    width: 379px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .emailInput {
+    font-size: 18px;
+    line-height: 27px;
+    width: 797px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 992px) {
+  .signupText {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  .nameInput {
+    width: 301px;
+    height: 45px;
+    font-size: 15px;
+    padding: 0 10px 0 15px;
+    margin-top: 8px;
+  }
+
+  .firstText {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .firstTextState {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .emailInput {
+    font-size: 15px;
+    padding: 0 10px 0 15px;
+    line-height: 18px;
+    width: 641px;
+    height: 45px;
+    margin-top: 8px;
+  }
+
+  .emailtext {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .agreeArea {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .signupText {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .nameInput {
+    width: 200px;
+    height: 32px;
+    font-size: 12px;
+    padding: 0 10px 0 10px;
+    margin-top: 8px;
+  }
+
+  .firstText {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .emailInput {
+    font-size: 12px;
+    padding: 0 10px 0 10px;
+    line-height: 18px;
+    width: 422px;
+    height: 32px;
+    margin-top: 8px;
+  }
+
+  .emailtext {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .agreeArea {
+    margin-top: 12px;
+  }
+
+  .checkInput {
+    height: 13px;
+    width: 13px;
+  }
+
+  .agreeText {
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 8px;
+  }
+
+  .signUpButton {
+    font-size: 16px;
+    line-height: 21px;
+    width: 145px;
+    height: 47px;
+  }
+
+  .lestInner {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nameArea {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .lestInner {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .nameInput {
+    width: 100%;
+  }
+  .nameINer {
+    width: 80%;
+  }
+
+  .lestInner {
+    width: 80%;
+  }
+
+  .emailInput {
+    width: 100%;
+  }
+
+  .emailArea {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .inpuitsArea {
+    width: 100%;
+  }
+
+  .agreeArea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+  .signUpButton {
+    font-size: 12px;
+    line-height: 12px;
+    width: 100px;
+    height: 36px;
+  }
+
+  .inpuitsArea {
+    padding-top: 0;
+  }
+}

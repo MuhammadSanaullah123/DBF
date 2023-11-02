@@ -1,0 +1,17 @@
+.starwhite {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.staryellow {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(255, 223, 0);
+}
+.form {
+  margin-bottom: 10px;
+}
+.textarea {
+  height: 100px !important;
+  margin-top: 15px;
+}

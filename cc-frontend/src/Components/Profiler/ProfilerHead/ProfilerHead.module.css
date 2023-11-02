@@ -1,0 +1,587 @@
+.proflerMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.uploadDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plusIcon {
+  font-size: 24px;
+  color: #00e5be;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.awardTrophy {
+  font-size: 40px;
+  margin-right: 15px;
+}
+@media (max-width: 540px) {
+  .awardTrophy {
+    font-size: 30px;
+    margin-right: 15px;
+  }
+}
+.bronzeTrophy {
+  color: rgb(205, 127, 50);
+}
+.silverTrophy {
+  color: rgb(192, 192, 192);
+}
+.goldTrophy {
+  color: rgb(255, 215, 0);
+}
+.DesigaREA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
+
+.designerName {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.88px;
+  line-height: 27px;
+  color: #ffffff;
+}
+
+.dots {
+  font-size: 35px;
+  fill: white;
+}
+
+.infoArea {
+  display: flex;
+  padding: 0px 20px 20px 0px;
+  border-bottom: 1.27939px solid #343434;
+}
+
+.imagesArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagesOuter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(50% 50% at 50% 50%, #363636 0%, #373737 100%);
+  border: 1.90534px solid #00e5be;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.profilImg {
+  width: 94.46px;
+  height: 96.82px;
+}
+
+.profileNmae {
+  margin-top: 20px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.8641px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.profilTextDeatail {
+  max-width: 233px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.acountDetail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5.4%;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 35px;
+}
+
+.postsNumber {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30.0524px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.postsText {
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.0036px;
+  line-height: 34px;
+  margin-top: 1.5px;
+}
+
+.postDetail {
+  display: flex;
+}
+@media (max-width: 340px) {
+  .postDetail {
+    flex-direction: column;
+  }
+  .acountDetail {
+    margin: 0 auto !important;
+  }
+}
+.awardArea {
+  display: flex;
+  margin-top: 28px;
+  align-items: center;
+}
+
+.awardImg {
+  width: 40.79px;
+  height: 40.79px;
+}
+
+.awardText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.1557px;
+  line-height: 32px;
+  color: #fed843;
+  margin-left: 22px;
+}
+
+.buttonsArea {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.folowbut {
+  margin-top: 20px;
+  width: 176.29px;
+  height: 42.1px;
+  border: 1.3156px solid #ffffff;
+  border-radius: 9.13822px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.172px;
+  line-height: 26px;
+  color: #ffffff;
+  background: none;
+}
+
+.messageBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.172px;
+  line-height: 26px;
+  color: #1c1c1c;
+  width: 176.29px;
+  height: 42.1px;
+  background: #ffffff;
+  border: 1.3156px solid #ffffff;
+  border-radius: 9.13822px;
+  margin-left: 18px;
+  margin-top: 20px;
+}
+
+.folwedArea {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 10px 35px 10px;
+  border-bottom: 1.27939px solid #343434;
+}
+
+.textArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.folledText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.9832px;
+  line-height: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.textAreaInput {
+  display: block;
+  border: 1px solid #ced4da;
+  width: 100%;
+  outline: none;
+  padding: 10px 15px;
+}
+.viewAll {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.2067px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #00e5be;
+}
+
+.cardArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardMAIN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 184.79px;
+  height: 184.79px;
+  background: #03ad00;
+  border-radius: 7.39168px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.cardMAIN2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 184.79px;
+  height: 184.79px;
+  background: #2300ad;
+  border-radius: 7.39168px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.followerImg {
+  width: 144.14px;
+  height: 145.99px;
+  border-radius: 10px;
+}
+
+.cardsOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.followerName {
+  margin-top: 9px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.925px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+@media (max-width: 1350px) {
+  .imagesOuter {
+    width: 145px;
+    height: 145px;
+  }
+
+  .profilImg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .postsNumber {
+    font-size: 26.0524px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .imagesOuter {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profilImg {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profileNmae {
+    margin-top: 10px;
+    font-size: 18.8641px;
+    line-height: 24px;
+  }
+
+  .profilTextDeatail {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .acountDetail {
+    margin-left: 20px;
+  }
+
+  .postsNumber {
+    font-size: 20.0524px;
+    line-height: 23px;
+  }
+
+  .postsText {
+    font-size: 19.0036px;
+    line-height: 24px;
+  }
+
+  .posts {
+    margin-right: 25px;
+  }
+
+  .awardArea {
+    margin-top: 20px;
+  }
+
+  .awardImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .awardText {
+    font-size: 19.1557px;
+    line-height: 25px;
+  }
+
+  .buttonsArea {
+    padding-top: 10px;
+  }
+
+  .folowbut {
+    margin-top: 10px;
+    width: 136.29px;
+    height: 38.1px;
+    font-size: 16.172px;
+    line-height: 26px;
+  }
+
+  .messageBut {
+    margin-top: 10px;
+    width: 136.29px;
+    height: 38.1px;
+    font-size: 16.172px;
+    line-height: 26px;
+  }
+
+  .folledText {
+    font-size: 20.9832px;
+    line-height: 27px;
+  }
+
+  .viewAll {
+    font-size: 16.2067px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .imagesOuter {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profilImg {
+    width: 60px;
+    height: 60px;
+  }
+
+  .profileNmae {
+    margin-top: 10px;
+    font-size: 17.8641px;
+    line-height: 22px;
+  }
+
+  .profilTextDeatail {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 199px;
+  }
+
+  .acountDetail {
+    margin-left: 20px;
+  }
+
+  .postsNumber {
+    font-size: 18.0524px;
+    line-height: 23px;
+  }
+
+  .postsText {
+    font-size: 17.0036px;
+    line-height: 22px;
+  }
+
+  .posts {
+    margin-right: 15px;
+  }
+
+  .awardArea {
+    margin-top: 15px;
+  }
+
+  .awardImg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .awardText {
+    font-size: 17.1557px;
+    line-height: 22px;
+  }
+
+  .buttonsArea {
+    padding-top: 10px;
+  }
+
+  .folowbut {
+    margin-top: 10px;
+    width: 122.29px;
+    height: 38.1px;
+    font-size: 15.172px;
+    line-height: 26px;
+  }
+
+  .messageBut {
+    margin-top: 10px;
+    width: 122.29px;
+    height: 38.1px;
+    font-size: 15.172px;
+    line-height: 26px;
+  }
+
+  .DesigaREA {
+    padding-top: 30x !important;
+  }
+
+  .designerName {
+    font-size: 17.88px;
+    line-height: 16px;
+  }
+
+  .infoArea {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .imagesOuter {
+    width: 75px;
+    height: 75px;
+  }
+
+  .profilImg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .profileNmae {
+    margin-top: 10px;
+    font-size: 12.8641px;
+    line-height: 15px;
+  }
+
+  .profilTextDeatail {
+    font-size: 9px;
+    line-height: 11px;
+    max-width: 120px;
+  }
+
+  .acountDetail {
+    margin-left: 10px;
+  }
+
+  .postsNumber {
+    font-size: 13.0036px;
+    line-height: 15px;
+  }
+
+  .postsText {
+    font-size: 13.0036px;
+    line-height: 15px;
+  }
+
+  .posts {
+    margin-right: 8px;
+  }
+
+  .awardArea {
+    margin-top: 10px;
+  }
+
+  .awardImg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .awardText {
+    font-size: 12.1557px;
+    line-height: 15px;
+    margin-left: 10px;
+  }
+
+  .buttonsArea {
+    padding-top: 10px;
+  }
+
+  .folowbut {
+    margin-top: 10px;
+    width: 100.29px;
+    height: 34.1px;
+    font-size: 13.172px;
+    line-height: 26px;
+  }
+
+  .messageBut {
+    margin-top: 10px;
+    width: 100.29px;
+    height: 34.1px;
+    font-size: 13.172px;
+    line-height: 26px;
+    margin-left: 10px;
+  }
+
+  .designerName {
+    font-size: 15.88px;
+    line-height: 16px;
+  }
+
+  .infoArea {
+    padding: 20px 0 20px 0;
+  }
+}

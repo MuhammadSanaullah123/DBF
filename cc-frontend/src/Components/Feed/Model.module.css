@@ -1,0 +1,6 @@
+.modal-backdrop {
+  background-color: transparent !important;
+}
+.modal-backdrop.show {
+  opacity: 0 !important;
+}

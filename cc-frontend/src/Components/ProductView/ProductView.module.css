@@ -1,0 +1,780 @@
+.viewOuter {
+    display: flex;
+    flex-direction: column;
+    background: #1c1c1c;
+    width: 100%;
+}
+
+.overViewArea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1216px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.overviewInner {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.designerInfo {
+    display: flex;
+    align-items: center;
+}
+
+
+.designImageArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70.47px;
+    height: 70.47px;
+    background: radial-gradient(50% 50% at 50% 50%, #363636 0%, #373737 100%);
+    border-radius: 50%;
+}
+
+
+.designerImg {
+    width: 39.64px;
+    height: 39.64px;
+}
+
+
+.designername {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.0219px;
+    line-height: 30px;
+    color: #FFFFFF;
+    margin-left: 13px;
+}
+
+
+.mainImagArea {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 952px;
+
+}
+
+.paperimg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.robert {
+    background: #00E5BE;
+    border-radius: 9px 0px 29.71px 9px;
+    width: 335px;
+    height: 67px;
+    font-family: 'The Girl Next Door';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35.5738px;
+    line-height: 66px;
+    color: #1C1C1C;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.startsArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 15px 0 15px;
+}
+
+
+.designName {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.startsRight {
+    display: flex;
+    align-items: center;
+}
+
+.startYellow {
+    font-size: 37px;
+    fill: #FFE601;
+    margin-right: 4px;
+}
+
+
+.startwhite {
+    font-size: 37px;
+    fill: #D9D9D9;
+    margin-right: 4px;
+}
+
+.model {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.21px;
+    line-height: 32px;
+    color: #CACBCB;
+    width: 146px;
+    height: 48px;
+    background: #434343;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23px;
+}
+
+
+.stockDetail {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+
+.productPrice {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 75px;
+    color: #FFFFFF;
+    margin-top: 13px;
+}
+
+
+.stckNumbers {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FF0000;
+}
+
+.availText {
+    color: #FFFFFF;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 32px;
+}
+
+
+.sizesdiv {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 29px;
+    color: #FFFFFF;
+    background: rgba(80, 80, 80, 0.63);
+    border-radius: 20px;
+    margin-top: 8PX;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 262px;
+    height: 50px;
+}
+
+
+.specificationsArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 55px;
+    margin-bottom: 55px;
+}
+
+
+.buttonsArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.overBuuton {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 54px;
+    background: #3D3D3D;
+    border-radius: 41.5px;
+    border: none;
+}
+
+.overBuuton2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 215px;
+    height: 54px;
+    border-radius: 41.5px;
+    border: none;
+    background: none;
+}
+
+.listArea {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.listspec {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    background: #292929;
+    min-height: 47px;
+    padding-right: 10px;
+    min-width: 570px;
+}
+
+.listspec1 {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    min-height: 47px;
+    padding-right: 10px;
+    min-width: 570px;
+}
+
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #FFFFFF;
+
+}
+
+.specText {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-left: 27px;
+    text-align: center;
+}
+
+
+.buyButtons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 67px;
+    justify-content: center;
+}
+
+.buyNoq {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.76px;
+    line-height: 34px;
+    color: #FFFFFF;
+    background: #00E5BE;
+    box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
+    border-radius: 9.14895px;
+    width: 172px;
+    height: 54.89px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+.add {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24.76px;
+    line-height: 34px;
+    color: #00E5BE;
+    border: 2px solid #00E5BE;
+    filter: drop-shadow(-3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25));
+    border-radius: 9.14895px;
+    width: 203px;
+    height: 55px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+@media (max-width:1350px) {
+
+
+    .overViewArea {
+        max-width: 971px;
+    }
+
+
+    .mainImagArea {
+        height: 800px;
+    }
+
+    .productPrice {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+
+    .availText {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+
+
+}
+
+@media (max-width:1150px) {
+
+
+    .overViewArea {
+        max-width: 900px;
+    }
+
+
+    .mainImagArea {
+        height: 700px;
+    }
+
+    .productPrice {
+        font-size: 40px;
+        line-height: 49px;
+    }
+
+
+    .availText {
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+
+
+}
+
+
+@media (max-width:992px) {
+
+
+    .overViewArea {
+        max-width: 700px;
+    }
+
+
+    .mainImagArea {
+        height: 599px;
+    }
+
+
+.startYellow{
+    font-size: 24px;
+    fill: #FFE601;
+    margin-right: 4px;
+}
+
+.startwhite{
+    font-size: 24px;
+    fill: white;
+    margin-right: 4px;
+}
+
+
+.productPrice {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+.availText {
+    font-size: 22px;
+    line-height: 27px;
+}
+
+
+.designName{
+    font-size: 22px;
+    line-height: 23px;
+}
+
+
+.model{
+    width: 118px;
+    height: 42px;
+    
+    font-size: 17.21px;
+    line-height: 28px;
+
+}
+
+.stckNumbers{
+    font-size: 22px;
+    line-height: 29px;
+}
+
+
+.sizesdiv{
+    font-size: 11px;
+    line-height: 21px;
+    width: 184px;
+    height: 42px;
+}
+
+.robert{
+    border-radius: 9px 0px 23.71px 9px;
+    width: 231px;
+    height: 53px;
+    font-size: 26.5738px;
+    line-height: 47px;
+}
+
+.specificationsArea{
+    padding-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+.buttonsArea{
+    gap: 20px;
+}
+
+.listArea{
+    padding-top: 20px;
+}
+
+.overBuuton{
+    width: 150px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+.overBuuton2{
+    width: 150px;
+    height: 48px;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+.buyButtons{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.buyNoq{
+    font-size: 17.76px;
+    line-height: 19px;
+    width: 125px;
+    height: 41.89px;
+}
+
+.add{
+    font-size: 17.76px;
+    line-height: 23px;
+    width: 145px;
+    height: 42px;
+
+}
+
+
+
+}
+
+
+@media (max-width:767px) {
+
+
+    .overViewArea {
+        max-width: 500px;
+    }
+
+
+    .mainImagArea {
+        height: 400px;
+    }
+
+
+.startYellow{
+    font-size: 18px;
+    fill: #FFE601;
+    margin-right: 4px;
+}
+
+.startwhite{
+    font-size: 18px;
+    fill: white;
+    margin-right: 4px;
+}
+
+
+.productPrice {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+.availText {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+
+.designName{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+.model{
+    width: 90px;
+    height: 32px;
+    
+    font-size: 14.21px;
+    line-height: 20px;
+
+}
+
+.stckNumbers{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+.sizesdiv{
+    font-size: 9px;
+    line-height: 14px;
+    width: 140px;
+    height: 32px;
+}
+
+.robert{
+    border-radius: 9px 0px 15.71px 9px;
+    width: 140px;
+    height: 30px;
+    font-size: 15.5738px;
+    line-height: 22px;
+}
+
+
+.designImageArea{
+    width: 50.47px;
+    height: 50.47px;
+}
+
+.designerImg{
+    width: 25.64px;
+    height: 25.64px;
+}
+
+.designername{
+    font-size: 13.0219px;
+    line-height: 22px;
+}
+
+.startsArea{
+    padding-top: 10px;
+}
+
+.overBuuton{
+    width: 117px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+
+.overBuuton2{
+    width: 117px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.listspec1{
+    padding-left: 20px;
+    min-width: unset;
+    max-width: 400px;
+}
+
+.listspec{
+    padding-left: 20px;
+    min-width: unset;
+    max-width: 300px;
+}
+
+
+.dot{
+    width: 8px;
+    height: 8px;
+}
+
+
+.specText{
+    font-size: 14px;
+    line-height: 23px;
+    margin-left: 10px;
+}
+
+}
+
+
+@media (max-width:450px) {
+
+
+    .overViewArea {
+        max-width: 400px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .mainImagArea {
+        height: 300px;
+        margin-top: 10px;
+    }
+
+
+.startYellow{
+    font-size: 16px;
+    fill: #FFE601;
+    margin-right: 4px;
+}
+
+.startwhite{
+    font-size: 16px;
+    fill: white;
+    margin-right: 4px;
+}
+
+
+.productPrice {
+    font-size: 12px;
+    line-height: 1px;
+}
+
+
+.availText {
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 20px;
+}
+
+
+.designName{
+    font-size: 13px;
+    line-height: 16px;
+}
+
+
+.model{
+    width: 80px;
+    height: 32px;
+    margin-left: 10px;
+    font-size: 12.21px;
+    line-height: 20px;
+
+}
+
+.stckNumbers{
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
+
+.sizesdiv{
+    font-size: 9px;
+    line-height: 14px;
+    width: 140px;
+    height: 32px;
+}
+
+.robert{
+    border-radius: 9px 0px 11.71px 9px;
+    width: 140px;
+    height: 30px;
+    font-size: 15.5738px;
+    line-height: 22px;
+}
+
+
+.designImageArea{
+    width: 50.47px;
+    height: 50.47px;
+} 
+
+.designerImg{
+    width: 25.64px;
+    height: 25.64px;
+}
+
+
+.buyNoq{
+    font-size: 15.76px;
+    line-height: 19px;
+    width: 110px;
+    height: 35.89px;
+}
+
+.add{
+    font-size: 15.76px;
+    line-height: 23px;
+    width: 130px;
+    height: 35px;
+
+}
+
+
+}

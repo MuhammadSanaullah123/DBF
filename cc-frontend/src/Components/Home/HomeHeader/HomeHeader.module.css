@@ -1,0 +1,503 @@
+.trendingArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 58px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1.7px solid #343434;
+}
+
+.textArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trendingHeading {
+  display: flex;
+  align-items: center;
+}
+
+.treandHead {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.9832px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.treandHead2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.funnel {
+  width: 21px;
+  height: 21px;
+  fill: #ffffff;
+  margin-left: 21px;
+}
+
+.viewAll {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.2067px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  color: #00e5be;
+}
+
+.cardAREA {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 59px;
+  border-bottom: 1.7px solid #343434;
+}
+
+.cardAREA2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 17px;
+}
+
+.designCardsArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.cardAREA3 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+.uperCard {
+  display: flex;
+  width: 221.98px;
+  /* height: 221.98px; */
+  /* background: rgba(245, 193, 46, 0.5); */
+  border-radius: 11.4819px;
+  flex-direction: column;
+  margin-right: 8px;
+  margin-top: 15px;
+}
+
+.uperCard,
+.uperCard3 > img {
+  width: 250px;
+  height: 200px;
+}
+
+.uperCard1 {
+  display: flex;
+  width: 221.98px;
+  height: 221.98px;
+  /* background: rgba(200, 52, 71, 0.5); */
+  border-radius: 11.4819px;
+  flex-direction: column;
+  margin-right: 8px;
+  margin-top: 15px;
+}
+
+.uperCard3 {
+  display: flex;
+  width: 265.03px;
+  height: 265.03px;
+  /* background: rgba(245, 193, 46, 0.5); */
+  border-radius: 13.7085px;
+  flex-direction: column;
+  margin-right: 8px;
+  margin-top: 15px;
+}
+
+.uperCard4 {
+  display: flex;
+  width: 250px;
+  height: 200px;
+  /* height: 265.03px; */
+  /* background: rgba(200, 52, 71, 0.5); */
+  border-radius: 13.7085px;
+  flex-direction: column;
+  margin-right: 8px;
+  margin-top: 15px;
+}
+
+.cardsImage {
+  /* width: 105px;
+    height: 136px; */
+  width: 100%;
+  border-radius: 10px;
+  /*   margin-top: 25px; */
+  /* min-height: 200px; */
+
+  min-height: -webkit-fill-available;
+  /* margin-left: auto;
+    margin-right: auto; */
+}
+.cardsImage_SingleImage {
+  /* width: 105px;
+    height: 136px; */
+  width: 100%;
+  border-radius: 10px;
+  /*   margin-top: 25px; */
+  /* min-height: 200px; */
+
+  min-height: 200px;
+  /* margin-left: auto;
+    margin-right: auto; */
+}
+
+a {
+  width: auto;
+}
+
+.cardsImage2 {
+  width: 100%;
+  /* min-height: 200px; */
+
+  min-height: -webkit-fill-available;
+
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid #00E5BE; */
+  border-radius: 10px;
+}
+.cardsImage2_SingleImage {
+  width: 100%;
+  /* min-height: 200px; */
+
+  min-height: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 1px solid #00E5BE; */
+  border-radius: 10px;
+}
+.cardsText {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22.9638px;
+  line-height: 38px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: auto;
+  font-family: "Waiting for the Sunrise", cursive;
+}
+
+.cardsText2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 27.417px;
+  line-height: 45px;
+  color: #ffffff;
+  margin-top: 12px;
+  margin-right: 14px;
+  margin-left: auto;
+  font-family: "Waiting for the Sunrise", cursive;
+}
+
+.cardsMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsDown {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.2899px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-top: 9px;
+  text-align: center;
+}
+
+.designArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 70px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1.7px solid #343434;
+}
+
+.viewLower {
+  margin-top: 44px;
+  display: flex;
+  justify-content: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.31px;
+  line-height: 30px;
+  text-decoration-line: underline;
+  color: #00e5be;
+  margin-bottom: 17px;
+}
+
+.weekImage {
+  width: 90%;
+  height: 194px;
+  margin-right: 5px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+
+.designCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+  width: 185px;
+  height: 185px;
+  background: #03ad00;
+  border-radius: 7.39168px;
+}
+
+.designCard2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 29px;
+  width: 185px;
+  height: 185px;
+  /* background: #2300AD; */
+  border-radius: 7.39168px;
+}
+
+.designImg {
+  width: 145px;
+  height: 145px;
+  margin-top: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.designName {
+  margin-top: 13px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18.925px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.follewButton {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16.93px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: center;
+  background: #00e5be;
+  box-shadow: -2px 2px 7px rgba(0, 229, 190, 0.25);
+  border-radius: 5px;
+  margin-top: 3px;
+  width: 94px;
+  height: 30px;
+  border: none;
+}
+
+@media (max-width: 1350px) {
+  .uperCard {
+    width: 189.98px;
+    height: 189.98px;
+  }
+
+  .uperCard1 {
+    width: 189.98px;
+    height: 189.98px;
+  }
+
+  .cardsImage {
+    /* width: 73px;
+        height: 100px; */
+  }
+
+  .cardsText {
+    font-size: 17.9638px;
+  }
+
+  .trendingArea {
+    max-width: 1400px;
+  }
+
+  .uperCard3 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .uperCard4 {
+    width: 220px;
+    height: 220px;
+  }
+
+  .cardsImage2 {
+    /* width: 93px;
+    height: 110px; */
+  }
+
+  .designArea {
+    max-width: 1400px;
+  }
+
+  .cardsText2 {
+    font-size: 19.9638px;
+  }
+  .weekImage {
+    height: 480px;
+    margin-right: 5px;
+    width: 480px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .uperCard {
+    width: 170px;
+    height: 170px;
+  }
+
+  .uperCard1 {
+    width: 170px;
+    height: 170px;
+  }
+
+  .cardsImage {
+    /* width: 60px;
+        height: 85px; */
+  }
+
+  .cardsText {
+    font-size: 17.9638px;
+  }
+
+  .trendingArea {
+    max-width: 1400px;
+  }
+
+  .uperCard3 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .uperCard4 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cardsImage2 {
+    /* width: 85px;
+        height: 100px; */
+  }
+
+  .designArea {
+    max-width: 1400px;
+  }
+
+  .cardsText2 {
+    font-size: 19.9638px;
+  }
+
+  .cardAREA3 {
+    justify-content: space-around;
+  }
+
+  .weekImage {
+    height: 380px;
+    margin-right: 5px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 767px) {
+  .treandHead {
+    font-size: 20.9832px;
+  }
+  .treandHead2 {
+    font-size: 20.9832px;
+  }
+
+  .viewAll {
+    font-size: 15px;
+  }
+
+  .viewLower {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .cardAREA {
+    justify-content: space-around;
+    padding-bottom: 29px;
+  }
+  .cardAREA2 {
+    justify-content: space-around;
+    padding-bottom: 29px;
+  }
+
+  .trendingArea {
+    padding-top: 20px;
+  }
+
+  .designArea {
+    padding-top: 20px;
+  }
+
+  .cardAREA3 {
+    padding-bottom: 30px;
+  }
+  .weekImage {
+    margin-top: 20px;
+    height: 350px;
+    margin-right: 5px;
+    width: 350px;
+  }
+
+  .designCardsArea {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .weekImage {
+    margin-top: 20px;
+    height: 260px;
+    margin-right: 5px;
+    width: 287px;
+  }
+}
+
+@media (max-width: 450px) {
+  /* .cardAREA {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardAREA2 {
+        flex-direction: column;
+        align-items: center;
+    } */
+}

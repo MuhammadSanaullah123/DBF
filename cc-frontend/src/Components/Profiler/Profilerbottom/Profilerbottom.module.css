@@ -1,0 +1,178 @@
+.modelingArea {
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+  border-top: 1.7px solid #343434;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 70px auto;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.postImages {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  margin-top: 15px;
+}
+.buttonsArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightButtons {
+  display: flex;
+}
+@media (max-width: 350px) {
+  .rightButtons {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+.design1 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29.202px;
+  line-height: 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00ffa3;
+  box-shadow: 0px 0px 16.3662px rgba(0, 255, 163, 0.25);
+  border-radius: 41.5px;
+  width: 227.96px;
+  height: 83px;
+  margin-right: 20px;
+  border: none;
+}
+
+.design2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 29.202px;
+  line-height: 40px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #00FFA3;
+box-shadow: 0px 0px 16.3662px rgba(0, 255, 163, 0.25); */
+  border-radius: 41.5px;
+  width: 227.96px;
+  height: 83px;
+  margin-right: 20px;
+  border: none;
+  background: none;
+}
+
+.funnel {
+  font-size: 32px;
+  fill: #ffffff;
+}
+@media (max-width: 370px) {
+  .funnel {
+    display: none;
+  }
+}
+.imagesArea {
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.imgstreet {
+  width: 384px;
+  height: 200px;
+  border-radius: 14px;
+
+  margin-right: 5px;
+}
+.imgstreet_singleimg {
+  width: 384px;
+  height: 400px;
+  border-radius: 14px;
+
+  margin-right: 5px;
+}
+@media (max-width: 1350px) {
+  .design1 {
+    width: 180.96px;
+    height: 61px;
+    font-size: 24.202px;
+    line-height: 33px;
+  }
+
+  .design2 {
+    width: 180.96px;
+    height: 61px;
+    font-size: 24.202px;
+    line-height: 33px;
+  }
+
+  .imgstreet {
+    width: 340px;
+    height: 341px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .imgstreet {
+    width: 300px;
+    height: 306px;
+  }
+}
+
+@media (max-width: 992px) {
+  .imgstreet {
+    width: 250px;
+    height: 240px;
+  }
+
+  .design1 {
+    width: 150.96px;
+    height: 50px;
+    font-size: 20.202px;
+    line-height: 25px;
+  }
+
+  .design2 {
+    width: 150.96px;
+    height: 50px;
+    font-size: 20.202px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .design1 {
+    width: 95.96px;
+    height: 38px;
+    font-size: 14.202px;
+    line-height: 25px;
+    margin-right: 10px;
+  }
+
+  .design2 {
+    width: 95.96px;
+    height: 38px;
+    font-size: 14.202px;
+    line-height: 25px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .design1 {
+    width: 90%;
+    margin-right: 0;
+  }
+  .design2 {
+    width: 90%;
+    margin-right: 0;
+  }
+}
