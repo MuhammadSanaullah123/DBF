@@ -3,6 +3,9 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/user");
 const Story = require("../models/story");
 const Post = require("../models/post");
+const dotenv = require("dotenv");
+dotenv.config();
+
 const Conversation = require("../models/conversation");
 const Message = require("../models/message");
 const qs = require("qs");
@@ -36,7 +39,7 @@ module.exports.userLogin = (req, res, next) => {
                 if (newResult) {
                   const token = jwt.sign(
                     { ...foundObject.toObject(), password: "" },
-                    "secret",
+                    process.env.JWT_SESSION_KEY,
                     {
                       expiresIn: "5d",
                     }
@@ -104,7 +107,7 @@ module.exports.userSignup = (req, res, next) => {
               .then(async (savedObject) => {
                 const token = jwt.sign(
                   { ...savedObject.toObject(), password: "" },
-                  "secret",
+                  process.env.JWT_SESSION_KEY,
                   {
                     expiresIn: "5d",
                   }
@@ -141,7 +144,7 @@ module.exports.userVerification = (req, res, next) => {
   const { token } = req.params;
 
   try {
-    const decodedData = jwt.verify(token, "secret");
+    const decodedData = jwt.verify(token, process.env.JWT_SESSION_KEY);
     User.findOneAndUpdate({ email: decodedData?.email }, { isActive: true })
       .exec()
       .then(async (foundObject) => {
@@ -179,7 +182,7 @@ module.exports.forgotPassword = async (req, res, next) => {
         .json({ message: `User with email ${email} was not found!` });
     const token = jwt.sign(
       { access: "forgot-password", userId: foundUser._id },
-      "secret"
+      process.env.JWT_SESSION_KEY
     );
     foundUser.forgotToken = token;
     foundUser.isForgotTokenUsed = false;
@@ -884,7 +887,9 @@ module.exports.googleAppSignin = async (req, res, next) => {
     email,
   });
 
-  const token = jwt.sign({ user }, "secret", { expiresIn: "5d" });
+  const token = jwt.sign({ user }, process.env.JWT_SESSION_KEY, {
+    expiresIn: "5d",
+  });
 
   try {
     if (token === undefined) {

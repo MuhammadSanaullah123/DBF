@@ -1,10 +1,13 @@
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
+const dotenv = require("dotenv");
+dotenv.config();
+
 const express = require("express");
 const session = require("express-session");
 const jwt = require("jsonwebtoken");
-const jwtSecretKey = "secret"; // Replace with a secure secret key
+const jwtSecretKey = process.env.JWT_SESSION_KEY; // Replace with a secure secret key
 const User = require("../models/user");
 const adminValidate = require("./checkAdmin");
 const app = express();
@@ -13,9 +16,8 @@ module.exports = async (req, res, next) => {
   passport.use(
     new GoogleStrategy(
       {
-        clientID:
-          "544075437857-3m72ku4mvruqpvnpkg31d7g7mf4ajdp0.apps.googleusercontent.com",
-        clientSecret: "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",
+        clientID: process.env.GOOGLE_CLIENT_ID,
+        clientSecret: process.env.GOOGLE_CLIENT_SECRET,
         callbackURL: "http://localhost:6002/user/auth/google/callback",
         userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
       },
@@ -38,7 +40,7 @@ module.exports = async (req, res, next) => {
             email: profile._json.email,
           },
           async (err, user) => {
-            const token = jwt.sign({ user }, "secret", { expiresIn: "5d" });
+            const token = jwt.sign({ user }, jwtSecretKey, { expiresIn: "5d" });
 
             if (token === undefined) {
               res.status(401).json({
@@ -64,8 +66,8 @@ module.exports = async (req, res, next) => {
   passport.use(
     new FacebookStrategy(
       {
-        clientID: "1040678633794319",
-        clientSecret: "52b4a406b6b62177a3cb4019805cc5b4",
+        clientID: process.env.FACEBOOK_CLIENT_ID,
+        clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
         callbackURL: "http://localhost:6002/user/auth/facebook/callback",
       },
       (accessToken, refreshToken, profile, done) => {
@@ -87,7 +89,7 @@ module.exports = async (req, res, next) => {
             email: profile.email || "hamzaqament.com",
           },
           async (err, user) => {
-            const token = jwt.sign({ user }, "secret", { expiresIn: "5d" });
+            const token = jwt.sign({ user }, jwtSecretKey, { expiresIn: "5d" });
 
             if (token === undefined) {
               res.status(401).json({

@@ -14,13 +14,10 @@ const User = require("./api/models/user");
 dotenv.config();
 
 mongoose
-  .connect(
-    "mongodb+srv://zee:zee@cluster0.ne9b392.mongodb.net/CC?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then((res) => console.log("Connected to MongoDb"))
   .catch((err) => console.log("MongoDb connection Error", err));
 
@@ -32,7 +29,7 @@ app.use("/public", express.static("public"));
 
 app.use(
   session({
-    secret: "secret",
+    secret: process.env.JWT_SESSION_KEY,
     resave: true,
     saveUninitialized: true,
   })
