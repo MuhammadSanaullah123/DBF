@@ -47,8 +47,8 @@ function DBFNavbar() {
                   <Link to="/profiler/me" className={styles.navLinkss}>
                     Profile
                   </Link>
-                  <Link to="/history" className={styles.navLinkss}>
-                    History
+                  <Link to="/orders" className={styles.navLinkss}>
+                    Orders
                   </Link>
                 </Nav>
               </Offcanvas.Body>

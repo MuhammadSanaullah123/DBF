@@ -139,8 +139,8 @@ const Navbar2 = ({ auth: { loading, user, isAuthenticated }, logout }) => {
                       <a href="/profiler/me" className={styles.NavLiks}>
                         Profile
                       </a>
-                      <a href="/history" className={styles.NavLiks}>
-                        History
+                      <a href="/orders" className={styles.NavLiks}>
+                        Orders
                       </a>
                     </Nav>
                   </Offcanvas.Body>

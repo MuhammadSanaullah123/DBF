@@ -1,56 +1,57 @@
 .thankYouWrapper {
-    background-color: #1c1c1c;
+  background-color: #1c1c1c;
+  height: 100vh;
 }
 
 .thankYouTitle {
-    color: #FFF;
-    font-size: 30px;
-    font-weight: 600;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .preThankYou {
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 500;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .rowInvoice {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .titleInvoice {
-    color: #FFF;
-    font-size: 22px;
-    font-weight: 500;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .invoiceValues {
-    color: white;
-    font-size: 18px;
-    font-weight: 300;
-    margin-left: 10px;
-    text-transform: capitalize;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 10px;
+  text-transform: capitalize;
 }
 
 .invoiceWrapper {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .review {
-    font-size: 20px;
-    color: #fff;
+  font-size: 20px;
+  color: #fff;
 }
 
 .offer {
-    color: #00E5BE;
-    font-size: 30px;
-    font-weight: 700;
+  color: #00e5be;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .reviewBtn {
-    background-color: #00E5BE;
-    border: 1px solid #00E5BE;
-    color: white;
-    padding: 5px 35px;
-    border-radius: 20px;
+  background-color: #00e5be;
+  border: 1px solid #00e5be;
+  color: white;
+  padding: 5px 35px;
+  border-radius: 20px;
 }

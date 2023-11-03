@@ -101,7 +101,7 @@ const ThankYou = ({
                   <span className={styles.invoiceValues}>{id}</span>
                 </div>
                 <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>Moyasar Message: </span> 
+                  <span className={styles.titleInvoice}>Moyasar Message: </span>
                   <span
                     className={styles.invoiceValues}
                     style={{ color: "#00ffa3" }}
