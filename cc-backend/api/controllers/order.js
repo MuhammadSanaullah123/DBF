@@ -24,7 +24,7 @@ module.exports.createOrder = async (req, res, next) => {
       return res.status(404).json({ error: "User not found" });
     }
     console.log("ORDERITEMS");
-    console.log(orderItems);
+    console.log(orderItems); 
     // Create an array of order items
     console.log("req.body>>>>>", req.body);
     const orderItemsArray = orderItems.map((item) => {

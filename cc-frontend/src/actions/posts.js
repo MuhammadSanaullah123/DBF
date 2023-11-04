@@ -138,7 +138,7 @@ export const getAllPosts = () => async (dispatch) => {
       type: POSTS_ERROR,
     });
 
-    Swal.fire(`${error}`);
+    /*  Swal.fire(`${error}`); */
   }
 };
 
@@ -155,7 +155,7 @@ export const getDesignsYouMayLike = () => async (dispatch) => {
       type: POSTS_ERROR,
     });
 
-    Swal.fire(`${error}`);
+    /* Swal.fire(`${error}`); */
   }
 };
 

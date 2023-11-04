@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import "./ProductView2.module.css";
+
+import "rsuite/dist/rsuite.min.css";
+import { Button, Tooltip, Whisper } from "rsuite";
 import Cookies from "js-cookie";
 import { Link } from "react-router-dom";
 import styles from "./ProductView2.module.css";
@@ -118,8 +121,27 @@ const ProductView2 = ({
               <div className={styles.mainImagArea}>
                 {post?.image?.map((img, index) => (
                   <div key={index} className={styles.imageContainer}>
-                    <img src={img} className={styles.paperimg} alt="" />
-                    <p className={styles.paperimgtext}>{post?.tag[index]}</p>
+                    {/*   <img src={img} className={styles.paperimg} alt="" />
+                    <p className={styles.paperimgtext}>{post?.tag[index]}</p> */}
+                    <Whisper
+                      followCursor
+                      placement="bottomStart"
+                      speaker={
+                        <Tooltip>
+                          <div
+                            style={{
+                              backround: "red",
+                            }}
+                          >
+                            <p /* className={styles.paperimgtext} */>
+                              {post?.tag[index]}
+                            </p>{" "}
+                          </div>
+                        </Tooltip>
+                      }
+                    >
+                      <img src={img} className={styles.paperimg} alt="" />
+                    </Whisper>
                   </div>
                 ))}
 
