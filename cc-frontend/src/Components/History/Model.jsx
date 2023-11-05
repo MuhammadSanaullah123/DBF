@@ -5,13 +5,12 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Navigation } from "swiper";
 // API
-import { getReviews } from "../../actions/posts";
+import { addReview } from "../../actions/posts";
 import { connect } from "react-redux";
 import propTypes from "prop-types";
-import store from "../../store";
+
 // Swal
 import Swal from "sweetalert2";
 
@@ -21,24 +20,37 @@ const Model = ({
   handleClose,
 
   auth: { user },
+  addReview,
 }) => {
-  const [reviews, setReviews] = useState();
-  const handleReview = async () => {
-    console.log("INSDEI");
-    console.log(currentPost.post);
-    try {
-      const res = await store.dispatch(getReviews(currentPost.post));
-      console.log(res.data); // Assuming that reviews are in res.data
-      setReviews(res.data);
-    } catch (error) {
-      console.error(error);
-    }
+  const [image, setImage] = useState();
+
+  const onSubmit = async () => {
+    const data = new FormData();
+    data.append("file", image);
+    data.append("upload_preset", "u928wexc");
+    data.append("cloud_name", "dihkvficg");
+
+    const res = await fetch(
+      "https://api.cloudinary.com/v1_1/dihkvficg/image/upload",
+      {
+        method: "post",
+        body: data,
+      }
+    );
+
+    const resData = await res.json();
+    const image_url = resData.url;
+
+    addReview({
+      rating: null,
+      review: null,
+      image: image_url,
+      id: currentPost._id,
+      userid: user._id,
+    });
+    window.location.reload();
   };
-  useEffect(() => {
-    handleReview();
-  }, [currentPost?.post]);
   console.log(currentPost);
-  console.log(reviews);
   return (
     <>
       <Modal
@@ -74,7 +86,7 @@ const Model = ({
               modules={[Navigation]}
               className="mySwiper"
             >
-              {reviews?.map((review, index) => (
+              {currentPost?.reviews.map((review, index) => (
                 <SwiperSlide key={index}>
                   <img
                     src={review.image}
@@ -86,6 +98,33 @@ const Model = ({
                 </SwiperSlide>
               ))}
             </Swiper>
+
+            <Form.Label
+              style={{
+                fontSize: "20px",
+                color: "#00E5BE",
+                marginTop: "10px",
+              }}
+            >
+              Upload File
+            </Form.Label>
+            <input
+              id="file-uploader"
+              style={{ display: "block" }}
+              type="file"
+              onChange={(e) => setImage(e.target.files[0])}
+            />
+
+            <Button
+              style={{
+                background: "#00E5BE",
+                border: "#00E5BE",
+                marginTop: "10px",
+              }}
+              onClick={() => onSubmit()}
+            >
+              Submit
+            </Button>
           </div>
         </Modal.Body>
       </Modal>
@@ -99,7 +138,7 @@ const mapStateToProps = (state) => ({
 });
 
 Model.propTypes = {
-  getReviews: propTypes.func.isRequired,
+  addReview: propTypes.func.isRequired,
 };
 
-export default connect(mapStateToProps, { getReviews })(Model);
+export default connect(mapStateToProps, { addReview })(Model);

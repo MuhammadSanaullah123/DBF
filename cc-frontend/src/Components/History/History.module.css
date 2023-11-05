@@ -8,7 +8,11 @@
 .postsArea {
   display: flex;
   flex-direction: column;
-  /* padding-top: 45px; */
+  padding: 10px 15px 10px 15px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .postsArea2 {
@@ -27,6 +31,7 @@ input:focus-visible {
   max-width: 550px;
   padding: 0 15px 55px 15px;
   margin: 44px auto 0 auto;
+  min-width: 425px;
   /*  border-bottom: 1.73574px solid #343434; */
 }
 
@@ -94,7 +99,7 @@ input:focus-visible {
   justify-content: space-between;
   position: absolute !important;
   bottom: 0;
-  width: 50%;
+  width: 40%;
   height: 67px;
   background: #292727;
   border-radius: 20px 0 0 0;
@@ -247,7 +252,7 @@ input:focus-visible {
 
 @media (max-width: 1350px) {
   .postCard {
-    max-width: 971px;
+    max-width: auto;
     padding-bottom: 26px;
     margin-top: 20px;
   }
@@ -595,5 +600,18 @@ input:focus-visible {
     height: 40px;
     border-radius: 16px;
     font-size: 15.21px;
+  }
+}
+.orderDiv {
+  display: flex;
+  overflow-x: auto;
+}
+@media (max-width: 500px) {
+  .postCard {
+    min-width: auto;
+  }
+  .orderDiv {
+    display: flex;
+    flex-direction: column;
   }
 }

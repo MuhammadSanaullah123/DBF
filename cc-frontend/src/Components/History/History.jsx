@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./History.module.css";
 import Navbar2 from "../Navbar2/Navbar2";
+import Moment from "react-moment";
+import moment from "moment";
 import productImg from "../../Images/feedProductImg1.png";
 import userImg from "../../Images/designderimg.png";
 import Model from "./Model";
@@ -47,12 +49,6 @@ const History = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
     setLoadingTemp(false);
   }, [postsHook, loading]);
 
-  const likeAPost = async (postID) => {
-    setLoadingTemp(true);
-    addLike(postID);
-
-    // setLoadingTemp(false)
-  };
   const handleCart = (item) => {
     setCurrentPost(item);
     setShowCart(!showCart);
@@ -76,126 +72,173 @@ const History = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
               />
             </div>
           ) : (
-            user?.orders?.map((item) => {
-              /*    const validReviews = item.reviews.filter(
-                (review) => review.rating !== null
-              );
-
-              const totalRating = validReviews.reduce(
-                (sum, review) => sum + review.rating,
-                0
-              );
-              let averageRating = totalRating / validReviews.length;
-              averageRating = Math.round(averageRating); */
-              return (
+            user?.orders
+              ?.filter((order) => order.orderItems.length >= 1)
+              ?.map((item) => (
                 <div
                   style={{
                     borderBottom: "1.73574px solid #343434",
+                    display: "flex",
+                    flexDirection: "column",
+                    marginTop: "50px",
                   }}
                 >
-                  {item.orderItems?.map((order, index) => (
-                    <div className={styles.postCard}>
-                      <div className={styles.postCardInner}>
-                        {/* <div className={styles.userinfo}>
-                          <img
-                            className={styles.imgBack}
-                            src={item.postedBy.image}
-                            alt=""
-                          />
-                          <div className={styles.userNmae}>
-                            {item.postedBy.userName}
-                          </div>
-                        </div> */}
-                        <div className={styles.productArea}>
-                          <Link to={`/product/${order.post}`}>
-                            <div
-                              className={`${
-                                order.image.length === 1
-                                  ? styles.productimgDiv_SingleImg
-                                  : styles.productimgDiv
-                              }`}
-                            >
-                              {order?.image?.map((img, index) => (
-                                <img
-                                  src={img}
+                  <div
+                    style={{
+                      display: "flex",
+                      color: "#fff",
+                      marginTop: "10px",
+                      fontSize: "18px",
+                    }}
+                  >
+                    Order ID:{" "}
+                    <p
+                      style={{
+                        color: "#00e5be",
+                        margin: "0",
+                        marginLeft: "30px",
+                        fontSize: "18px",
+                        lineBreak: "anywhere",
+                      }}
+                    >
+                      {item._id}
+                    </p>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      color: "#fff",
+                      marginTop: "10px",
+                      fontSize: "18px",
+                    }}
+                  >
+                    Date:{" "}
+                    <p
+                      style={{
+                        color: "#00e5be",
+                        margin: "0",
+                        marginLeft: "30px",
+                        fontSize: "18px",
+                      }}
+                    >
+                      {moment(item.createdAt).format("DD-MM-YYYY")}
+                    </p>
+                  </div>
+                  <div className={styles.orderDiv}>
+                    {item.orderItems?.map((order, index) => {
+                      let currentPost = postsHook?.filter(
+                        (post) => post._id === order.post
+                      );
+                      if (currentPost) {
+                        currentPost = currentPost[0];
+                      }
+                      console.log(currentPost);
+                      return (
+                        <div className={styles.postCard}>
+                          <div className={styles.postCardInner}>
+                            <div className={styles.userinfo}>
+                              <img
+                                className={styles.imgBack}
+                                src={currentPost?.postedBy.image}
+                                alt=""
+                              />
+                              <div className={styles.userNmae}>
+                                {currentPost?.postedBy.userName}
+                              </div>
+                            </div>
+                            <div className={styles.productArea}>
+                              <Link to={`/product/${order.post}`}>
+                                <div
                                   className={`${
                                     order.image.length === 1
-                                      ? styles.productimg_singleImg
-                                      : styles.productimg
+                                      ? styles.productimgDiv_SingleImg
+                                      : styles.productimgDiv
                                   }`}
-                                  alt=""
-                                  style={{
-                                    borderRadius:
-                                      index === 0 && order?.image.length > 1
-                                        ? "14px 14px 0 0"
-                                        : index === order?.image.length - 1 &&
-                                          order?.image.length > 1
-                                        ? "0 0 14px 14px"
-                                        : order?.image.length === 1
-                                        ? "14px"
-                                        : "0px",
-                                  }}
-                                />
-                              ))}
-                            </div>
-                            {/* <div className={styles.produvtdetail}>
-                              <div className={styles.designernmae}>
-                                {item.userName}
-                              </div>
-                            </div> */}
-                          </Link>
-                        </div>
-                        <div className={styles.feedBackArea}>
-                          <div className={styles.expressArea}>
-                            <div className={styles.starsArea}>
-                              {order.rating === 0 ? (
-                                <>
-                                  {Array.from({ length: 5 }, (_, index) => (
-                                    <GrStar
-                                      className={styles.startwhite}
-                                      key={index}
+                                >
+                                  {order?.image?.map((img, index) => (
+                                    <img
+                                      src={img}
+                                      className={`${
+                                        order.image.length === 1
+                                          ? styles.productimg_singleImg
+                                          : styles.productimg
+                                      }`}
+                                      alt=""
+                                      style={{
+                                        borderRadius:
+                                          index === 0 && order?.image.length > 1
+                                            ? "14px 14px 0 0"
+                                            : index ===
+                                                order?.image.length - 1 &&
+                                              order?.image.length > 1
+                                            ? "0 0 14px 14px"
+                                            : order?.image.length === 1
+                                            ? "14px"
+                                            : "0px",
+                                      }}
                                     />
                                   ))}
-                                </>
-                              ) : (
-                                <>
-                                  {Array.from(
-                                    { length: order.rating },
-                                    (_, index) => {
-                                      return (
+                                </div>
+                                <div className={styles.produvtdetail}>
+                                  <div className={styles.designernmae}>
+                                    {currentPost?.title}
+                                  </div>
+                                </div>
+                              </Link>
+                            </div>
+
+                            <div className={styles.feedBackArea}>
+                              <div className={styles.expressArea}>
+                                <div className={styles.starsArea}>
+                                  {order.rating === 0 ? (
+                                    <>
+                                      {Array.from({ length: 5 }, (_, index) => (
                                         <GrStar
-                                          className={styles.startYellow}
+                                          className={styles.startwhite}
                                           key={index}
                                         />
-                                      );
-                                    }
+                                      ))}
+                                    </>
+                                  ) : (
+                                    <>
+                                      {Array.from(
+                                        { length: order.rating },
+                                        (_, index) => {
+                                          return (
+                                            <GrStar
+                                              className={styles.startYellow}
+                                              key={index}
+                                            />
+                                          );
+                                        }
+                                      )}
+                                      {Array.from(
+                                        { length: 5 - order.rating },
+                                        (_, index) => (
+                                          <GrStar
+                                            className={styles.startwhite}
+                                            key={index}
+                                          />
+                                        )
+                                      )}
+                                    </>
                                   )}
-                                  {Array.from(
-                                    { length: 5 - order.rating },
-                                    (_, index) => (
-                                      <GrStar
-                                        className={styles.startwhite}
-                                        key={index}
-                                      />
-                                    )
-                                  )}
-                                </>
-                              )}
+                                </div>
+                              </div>
+                              <div
+                                className={styles.modelTilt}
+                                onClick={() => handleCart(currentPost)}
+                              >
+                                Model
+                              </div>
                             </div>
                           </div>
-                          <div
-                            className={styles.modelTilt}
-                            onClick={() => handleCart(order)}
-                          >
-                            Model
-                          </div>
                         </div>
-                      </div>
-                    </div>
-                  ))}
+                      );
+                    })}
+                  </div>
                 </div>
-              );
-            })
+              ))
           )}
         </div>
 
