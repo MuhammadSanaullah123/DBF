@@ -42,9 +42,20 @@ module.exports.createOrder = async (req, res, next) => {
         (sum, review) => sum + review.rating,
         0
       );
+      console.log("totalRating");
+      console.log(totalRating);
+      let averageRating;
+      if (validReviews.length >= 1) {
+        averageRating = totalRating / validReviews.length;
+      } else {
+        averageRating = totalRating / 1;
+      }
+      console.log("averageRating");
+      console.log(averageRating);
 
-      let averageRating = totalRating / validReviews.length;
       averageRating = Math.round(averageRating);
+      console.log("averageRating");
+      console.log(averageRating);
 
       const rating = averageRating;
       return { post: postId, image, reviews, rating };
