@@ -88,6 +88,7 @@ input:focus-visible {
 .productimg_singleImg {
   width: 100%;
   height: auto;
+  min-height: 400px;
 }
 
 .produvtdetail {
@@ -145,7 +146,7 @@ input:focus-visible {
   justify-content: center;
   align-items: center;
   background: #00e5be;
-  border-radius: 9px 0px 34.71px 9px;
+  border-radius: 9px 0px 14px 9px;
   width: 335px;
   height: 67px;
 }

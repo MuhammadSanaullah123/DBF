@@ -144,7 +144,7 @@
   border-radius: 10px;
   /*   margin-top: 25px; */
   /* min-height: 200px; */
-
+  height: inherit;
   min-height: -webkit-fill-available;
   /* margin-left: auto;
     margin-right: auto; */
@@ -171,7 +171,7 @@ a {
   /* min-height: 200px; */
 
   min-height: -webkit-fill-available;
-
+  height: inherit;
   margin-left: auto;
   margin-right: auto;
   /* border: 1px solid #00E5BE; */
