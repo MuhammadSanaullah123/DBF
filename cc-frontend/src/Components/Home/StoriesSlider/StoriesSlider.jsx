@@ -32,7 +32,13 @@ const StoriesSlider = ({ auth: { loading, user }, stories: { stories } }) => {
       setStoriesHook(stories);
     }
   }, [user]);
-
+  const userStoriesLength = user?.stories?.filter((story) => {
+    const createdAt = new Date(story?.createdAt);
+    const now = new Date();
+    const timeDifference = now - createdAt;
+    const twentyFourHoursInMilliseconds = 24 * 60 * 60 * 1000;
+    return timeDifference <= twentyFourHoursInMilliseconds;
+  }).length;
   console.log("STORUESSS");
   console.log(user);
   console.log(stories);
@@ -40,7 +46,15 @@ const StoriesSlider = ({ auth: { loading, user }, stories: { stories } }) => {
     <>
       {user && (
         <div className={styles.slidersMain}>
-          <div className={styles.titleS}>Stories</div>
+          <div
+            className={styles.titleS}
+            style={{
+              display: `${userStoriesLength !== 0 ? "flex" : "none"}`,
+            }}
+          >
+            Stories
+          </div>
+
           <div style={{ display: "flex" }}>
             {user?.stories !== null &&
             stories !== null /*  &&
@@ -49,30 +63,31 @@ const StoriesSlider = ({ auth: { loading, user }, stories: { stories } }) => {
                 <div className={styles.slidersMain}>
                   <div style={{ display: "flex", overflowX: "auto" }}>
                     {/* Logged in user stories */}
-
-                    <div
-                      className={styles.slidesOuter}
-                      style={{ marginLeft: "15px", marginRight: "15px" }}
-                    >
-                      {/* {stories[userId].map((item) => ( */}
-                      <div className={styles.slidCrad}>
-                        <img
-                          src={user?.image}
-                          onClick={() => {
-                            setOpenModal(true);
-                            setCurrentStory(user?.stories);
-                          }}
-                          className={styles.imgArea}
-                          alt=""
-                        />
-                        <div
-                          className={styles.user}
-                          style={{ color: "white", marginTop: "15px" }}
-                        >
-                          {user?.stories[0]?.userName}
+                    {userStoriesLength !== 0 && (
+                      <div
+                        className={styles.slidesOuter}
+                        style={{ marginLeft: "15px", marginRight: "15px" }}
+                      >
+                        {/* {stories[userId].map((item) => ( */}
+                        <div className={styles.slidCrad}>
+                          <img
+                            src={user?.image}
+                            onClick={() => {
+                              setOpenModal(true);
+                              setCurrentStory(user?.stories);
+                            }}
+                            className={styles.imgArea}
+                            alt=""
+                          />
+                          <div
+                            className={styles.user}
+                            style={{ color: "white", marginTop: "15px" }}
+                          >
+                            {user?.stories[0]?.userName}
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    )}
 
                     {/* Followed users stories */}
                     {Object.keys(stories).map((userId) => {

@@ -99,6 +99,7 @@
   width: 29px;
   height: 26px;
   margin-left: 40px;
+  cursor: pointer;
 }
 
 .line1 {
@@ -190,6 +191,8 @@
 }
 
 .loginBtn {
+  font-family: "Nunito";
+
   outline: none;
   background-color: #00e5be;
   color: white;

@@ -3,6 +3,8 @@ const jwt = require("jsonwebtoken");
 const Administration = require("../models/query");
 const saltRounds = 10;
 const dotenv = require("dotenv");
+const Order = require("../models/order");
+
 dotenv.config();
 // remove c
 module.exports.AdministrationsLogin = (req, res, next) => {
@@ -120,6 +122,7 @@ module.exports.getAllOrders = (req, res, next) => {
     .exec()
     .then((data) => {
       req.io.emit("broadcast", { message: "Data Sent" });
+      console.log(data.length);
       return res.status(200).json(data);
     })
     .catch((err) => {

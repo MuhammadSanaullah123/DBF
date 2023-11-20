@@ -19,6 +19,7 @@ import store from "../../../store";
 import {
   getTrendingPosts,
   getDesignOfDay,
+  getDesignOfWeek,
   getDesignOfMonth,
   getDesignOfYear,
   getTopModels,
@@ -30,6 +31,7 @@ const HomeHeader = ({
     loading,
     trendingPosts,
     designOfDay,
+    designOfWeek,
     designOfMonth,
     designOfYear,
     models,
@@ -42,6 +44,7 @@ const HomeHeader = ({
   useEffect(() => {
     store.dispatch(getTrendingPosts());
     store.dispatch(getDesignOfDay());
+    store.dispatch(getDesignOfWeek());
     store.dispatch(getDesignOfMonth());
     store.dispatch(getDesignOfYear());
     store.dispatch(getAllUsers());
@@ -99,6 +102,7 @@ const HomeHeader = ({
           )}
         </div>
       </div>
+
       <div className={styles.designArea}>
         <div className={styles.textArea}>
           <div className={styles.trendingHeading}>
@@ -163,6 +167,63 @@ const HomeHeader = ({
           )}
         </div>
       </div>
+
+      <div className={styles.designArea}>
+        <div className={styles.textArea}>
+          <div className={styles.trendingHeading}>
+            <div className={styles.treandHead2}>Design of the Week</div>
+          </div>
+        </div>
+        <div className={styles.cardAREA2}>
+          {loading == false ? (
+            designOfWeek?.slice(0, 4).map((item) => (
+              <Link to={`/product/${item?._id}`}>
+                <div className={styles.cardsMain}>
+                  <div
+                    className={item.flag ? styles.uperCard3 : styles.uperCard4}
+                  >
+                    {item?.image?.map((img, index) => (
+                      <img
+                        src={img}
+                        className={`${
+                          item?.image.length === 1
+                            ? styles.cardsImage2_SingleImage
+                            : styles.cardsImage2
+                        }`}
+                        alt=""
+                        style={{
+                          borderRadius:
+                            index === 0 && item?.image.length > 1
+                              ? "14px 14px 0 0"
+                              : index === item?.image.length - 1 &&
+                                item?.image.length > 1
+                              ? "0 0 14px 14px"
+                              : item?.image.length === 1
+                              ? "14px"
+                              : "0px",
+                        }}
+                      />
+                    ))}
+                  </div>
+                  <div className={styles.cardsDown}>{item?.userName}</div>
+                </div>
+              </Link>
+            ))
+          ) : (
+            <div style={{ width: "100vw", textAlign: "center" }}>
+              <RotatingLines
+                strokeColor="#00e5be"
+                strokeWidth="5"
+                animationDuration="0.75"
+                width="64"
+                visible={true}
+              />
+            </div>
+          )}
+        </div>
+        <div className={styles.viewLower}>View all</div>
+      </div>
+
       <div className={styles.designArea}>
         <div className={styles.textArea}>
           <div className={styles.trendingHeading}>
@@ -326,6 +387,7 @@ const mapStateToProps = (state) => ({
   posts: state.posts,
   trendingPosts: state.trendingPosts,
   designOfDay: state.posts.designOfDay,
+  designOfWeek: state.posts.designOfWeek,
   designOfMonth: state.posts.designOfMonth,
   designOfYear: state.posts.designOfYear,
   auth: state.auth,

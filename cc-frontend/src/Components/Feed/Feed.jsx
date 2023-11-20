@@ -5,6 +5,7 @@ import Navbar2 from "../Navbar2/Navbar2";
 import productImg from "../../Images/feedProductImg1.png";
 import userImg from "../../Images/designderimg.png";
 import Model from "./Model";
+import clipboardCopy from "clipboard-copy";
 // React icons
 import { BiHeart } from "react-icons/bi";
 import { AiTwotoneMessage, AiFillHeart } from "react-icons/ai";
@@ -36,7 +37,7 @@ const Feed = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
   const [comments, setComments] = useState();
   const [showCart, setShowCart] = useState(false);
   const [currentPost, setCurrentPost] = useState();
-
+  const [showPopup, setShowPopup] = useState(false);
   let tempUser = {};
   let tempPosts = {};
 
@@ -58,7 +59,21 @@ const Feed = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
     setCurrentPost(item);
     setShowCart(!showCart);
   };
+  const handleShareClick = () => {
+    const linkToCopy = "Link has been copied to your clipboard";
 
+    clipboardCopy(linkToCopy)
+      .then(() => {
+        setShowPopup(true);
+
+        setTimeout(() => {
+          setShowPopup(false);
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("Error copying to clipboard:", error);
+      });
+  };
   console.log(postsHook);
   return (
     <>
@@ -167,6 +182,7 @@ const Feed = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
                                     style={{
                                       color: "#00E5BE",
                                       fontSize: "20px",
+                                      cursor: "pointer",
                                     }}
                                   />
                                 )
@@ -188,7 +204,16 @@ const Feed = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
                               setComments(item.comments);
                             }}
                           />
-                          <BsFillShareFill className={styles.shareIcon} />
+                          <BsFillShareFill
+                            className={styles.shareIcon}
+                            onClick={handleShareClick}
+                          />
+
+                          {showPopup && (
+                            <div className={styles.popup}>
+                              Link copied to clipboard!
+                            </div>
+                          )}
                         </div>
                         <div className={styles.starsArea}>
                           {item.reviews.length === 0 ? (

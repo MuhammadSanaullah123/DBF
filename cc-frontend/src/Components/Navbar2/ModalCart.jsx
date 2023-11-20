@@ -11,7 +11,7 @@ import { createApplePayOrder } from "../../API/order";
 // Swal
 import Swal from "sweetalert2";
 
-const ModalCart = ({ show, cartData, handleClose }) => {
+const ModalCart = ({ show, cartData, handleClose, orderLoading }) => {
   const [cartDataTemp, setCartDataTemp] = useState([]);
   const [total, setTotal] = useState(0);
   console.log("cartData", cartDataTemp);
@@ -32,6 +32,12 @@ const ModalCart = ({ show, cartData, handleClose }) => {
     };
     setTotalFunction();
   }, [cartData, cartDataTemp]);
+
+  /*   useEffect(() => {
+    if (orderLoading === false) {
+      setCartDataTemp([]);
+    }
+  }, [orderLoading]); */
 
   const removeFromCart = async (itemID) => {
     await removeCart(
@@ -70,7 +76,9 @@ const ModalCart = ({ show, cartData, handleClose }) => {
           <Modal.Title>Cart</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {cartData != undefined && cartData.length > 0 ? (
+          {cartData != undefined &&
+          cartData.length > 0 &&
+          orderLoading !== false ? (
             cartDataTemp?.map((item, index) => {
               return (
                 <div>
@@ -140,18 +148,24 @@ const ModalCart = ({ show, cartData, handleClose }) => {
               <span style={{ fontSize: "25px" }}>"</span>
             </div>
           )}
-          <div style={{ display: "flex", justifyContent: "right" }}>
-            <div
-              style={{
-                marginRight: "30px",
-                fontWeight: "bold",
-                fontSize: "30px",
-              }}
-            >
-              Total:
-            </div>
-            <div style={{ fontSize: "30px" }}>${total}</div>
-          </div>
+
+          {cartData != undefined &&
+            cartData.length > 0 &&
+            orderLoading !== false && (
+              <div style={{ display: "flex", justifyContent: "right" }}>
+                <div
+                  style={{
+                    marginRight: "30px",
+                    fontWeight: "bold",
+                    fontSize: "30px",
+                  }}
+                >
+                  Total:
+                </div>
+                <div style={{ fontSize: "30px" }}>${total}</div>
+              </div>
+            )}
+
           <div
             style={{
               display: "flex",

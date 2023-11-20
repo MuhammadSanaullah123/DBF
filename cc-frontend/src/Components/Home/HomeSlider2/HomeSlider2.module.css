@@ -8,7 +8,14 @@
   width: 100%;
   margin-bottom: 60px;
 }
-
+.productimg_singleImg {
+  width: 100%;
+  height: inherit;
+}
+.productimg {
+  width: 100%;
+  height: 200px;
+}
 .modelsArea {
   display: flex;
   justify-content: space-between;

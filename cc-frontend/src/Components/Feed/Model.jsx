@@ -43,7 +43,7 @@ const Model = ({
 
     addReview({
       rating: null,
-      review: null,
+      review: null, 
       image: image_url,
       id: currentPost._id,
       userid: user._id,

@@ -31,6 +31,7 @@ const ThankYou = ({
   const amount = queryParameters.get("amount");
   const message = queryParameters.get("message");
   const [showCart, setShowCart] = useState(false);
+  const [orderLoading, setOrderLoading] = useState(true);
   useEffect(() => {
     console.log(user?.cart);
     if (!loading) {
@@ -51,7 +52,7 @@ const ThankYou = ({
         console.log(id);
         timesPurchased(id);
       }
-
+      setOrderLoading(false);
       /*       Cookies.remove("productID"); */
     }
   }, [loading]);
@@ -59,81 +60,100 @@ const ThankYou = ({
   return (
     <div className={styles.thankYouWrapper}>
       {/* Header */}
-      <Navbar2 />
-      <Grid container>
-        <Grid item xs={12} display="flex" justifyContent="center">
-          <Grid item xl={7} xs={10} display="flex">
-            <Grid item>
-              <img src={require("../../Images/Group 311.png")} />
-            </Grid>
-            <Grid item>
-              <div className={styles.invoiceWrapper}>
-                <h1 className={styles.thankYouTitle}>Thank You!</h1>
-                <p className={styles.preThankYou}>
-                  Your purchase went three successfully
-                </p>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>Order Number:</span>
-                  <span className={styles.invoiceValues}>
-                    {order?.order?.order?._id}
-                  </span>
+      <Navbar2 orderLoading={orderLoading} />
+
+      {orderLoading ? (
+        <div style={{ width: "100vw", textAlign: "center" }}>
+          <RotatingLines
+            strokeColor="#00e5be"
+            strokeWidth="5"
+            animationDuration="0.75"
+            width="64"
+            visible={true}
+          />
+        </div>
+      ) : (
+        <Grid container>
+          <Grid item xs={12} display="flex" justifyContent="center">
+            <Grid item xl={7} xs={10} display="flex">
+              <Grid item>
+                <img src={require("../../Images/Group 311.png")} />
+              </Grid>
+              <Grid item>
+                <div className={styles.invoiceWrapper}>
+                  <h1 className={styles.thankYouTitle}>Thank You!</h1>
+                  <p className={styles.preThankYou}>
+                    Your purchase went three successfully
+                  </p>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>Order Number:</span>
+                    <span className={styles.invoiceValues}>
+                      {order?.order?.order?._id}
+                    </span>
+                  </div>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>
+                      Delivery Location:
+                    </span>
+                    <span className={styles.invoiceValues}>2324324</span>
+                  </div>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>Expected Date: </span>
+                    <span className={styles.invoiceValues}>12/03/2026</span>
+                  </div>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>
+                      Moyasar Payment Status:{" "}
+                    </span>
+                    <span className={styles.invoiceValues}>{status}</span>
+                  </div>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>
+                      Moyasar Payment ID:{" "}
+                    </span>
+                    <span className={styles.invoiceValues}>{id}</span>
+                  </div>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>
+                      Moyasar Message:{" "}
+                    </span>
+                    <span
+                      className={styles.invoiceValues}
+                      style={{ color: "#00ffa3" }}
+                    >
+                      {message}
+                    </span>
+                  </div>
+                  <div className={styles.rowInvoice}>
+                    <span className={styles.titleInvoice}>
+                      Moyasar Amount:{" "}
+                    </span>
+                    <span className={styles.invoiceValues}>
+                      $ {amount / 100}
+                    </span>
+                  </div>
                 </div>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>
-                    Delivery Location:
-                  </span>
-                  <span className={styles.invoiceValues}>2324324</span>
-                </div>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>Expected Date: </span>
-                  <span className={styles.invoiceValues}>12/03/2026</span>
-                </div>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>
-                    Moyasar Payment Status:{" "}
-                  </span>
-                  <span className={styles.invoiceValues}>{status}</span>
-                </div>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>
-                    Moyasar Payment ID:{" "}
-                  </span>
-                  <span className={styles.invoiceValues}>{id}</span>
-                </div>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>Moyasar Message: </span>
-                  <span
-                    className={styles.invoiceValues}
-                    style={{ color: "#00ffa3" }}
-                  >
-                    {message}
-                  </span>
-                </div>
-                <div className={styles.rowInvoice}>
-                  <span className={styles.titleInvoice}>Moyasar Amount: </span>
-                  <span className={styles.invoiceValues}>$ {amount / 100}</span>
-                </div>
-              </div>
+              </Grid>
             </Grid>
           </Grid>
+          <Grid item xs={12} align="center" margin="40px 0">
+            <p className={styles.review}>Give us a Review to Get</p>
+            <p className={styles.offer}>5% of your Next Order</p>
+            <button
+              className={styles.reviewBtn}
+              onClick={() => setShowCart(!showCart)}
+            >
+              Review
+            </button>
+            <ModalReview
+              postID={Cookies.get("productID")}
+              show={showCart}
+              handleClose={() => setShowCart(false)}
+              cart={user?.cart}
+            />
+          </Grid>
         </Grid>
-        <Grid item xs={12} align="center" margin="40px 0">
-          <p className={styles.review}>Give us a Review to Get</p>
-          <p className={styles.offer}>5% of your Next Order</p>
-          <button
-            className={styles.reviewBtn}
-            onClick={() => setShowCart(!showCart)}
-          >
-            Review
-          </button>
-          <ModalReview
-            postID={Cookies.get("productID")}
-            show={showCart}
-            handleClose={() => setShowCart(false)}
-            cart={user?.cart}
-          />
-        </Grid>
-      </Grid>
+      )}
     </div>
   );
 };

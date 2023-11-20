@@ -26,7 +26,11 @@ import { connect } from "react-redux";
 import propTypes from "prop-types";
 import store from "../../store";
 
-const Navbar2 = ({ auth: { loading, user, isAuthenticated }, logout }) => {
+const Navbar2 = ({
+  auth: { loading, user, isAuthenticated },
+  logout,
+  orderLoading,
+}) => {
   const [showCart, setShowCart] = useState(false);
   const [cartData, setCartData] = useState();
   const [loadingTemp, setLoadingTemp] = useState(false);
@@ -164,9 +168,12 @@ const Navbar2 = ({ auth: { loading, user, isAuthenticated }, logout }) => {
                     onClick={() => setShowCart(!showCart)}
                   />
                   <span className={styles.cartNumber}>
-                    {user?.cart?.length || 0}
+                    {user?.cart?.length > 0 && orderLoading !== false
+                      ? user?.cart?.length
+                      : 0}
                   </span>
                   <ModalCart
+                    orderLoading={orderLoading}
                     show={showCart}
                     cartData={user?.cart}
                     handleClose={() => setShowCart(false)}
@@ -182,7 +189,14 @@ const Navbar2 = ({ auth: { loading, user, isAuthenticated }, logout }) => {
                       />
                     </Dropdown.Toggle>
                     <Dropdown.Menu>
-                      <Dropdown.Item onClick={logout}>Logout</Dropdown.Item>
+                      <Dropdown.Item
+                        onClick={logout}
+                        style={{
+                          fontFamily: "Nunito",
+                        }}
+                      >
+                        Logout
+                      </Dropdown.Item>
                     </Dropdown.Menu>
                   </Dropdown>
                 </div>

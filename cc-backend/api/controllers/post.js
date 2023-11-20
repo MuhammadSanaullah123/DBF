@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
-
+const { startOfWeek, endOfWeek } = require("date-fns");
 const checkAdmin = require("../middleware/checkAdmin");
 
 const Post = require("../models/post");
@@ -333,6 +333,28 @@ module.exports.designOfTheDay = async (req, res, next) => {
     throw new Error(
       "Failed to fetch the most liked post in the last 24 hours."
     );
+  }
+};
+
+module.exports.designOfTheWeek = async (req, res, next) => {
+  try {
+    const currentDate = new Date();
+
+    const startOfWeekDate = startOfWeek(currentDate);
+    const endOfWeekDate = endOfWeek(currentDate);
+
+    const posts = await Post.find({
+      createdAt: { $gte: startOfWeekDate, $lte: endOfWeekDate },
+    });
+
+    const sortedPosts = posts.sort((a, b) => b.likes.length - a.likes.length);
+
+    res.json(sortedPosts);
+  } catch (error) {
+    console.error(error);
+    res
+      .status(500)
+      .json({ error: "Failed to fetch most liked posts of the week" });
   }
 };
 

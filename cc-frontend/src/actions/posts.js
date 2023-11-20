@@ -11,6 +11,7 @@ import {
   TRENDING_POSTS_LOADED,
   POSTS_ERROR,
   DESIGN_OF_DAY_LOADED,
+  DESIGN_OF_WEEK_LOADED,
   DESIGN_OF_MONTH_LOADED,
   DESIGN_OF_YEAR_LOADED,
   POST_SUCCESS,
@@ -77,6 +78,26 @@ export const getDesignOfDay = () => async (dispatch) => {
 
     dispatch({
       type: DESIGN_OF_DAY_LOADED,
+      payload: res.data,
+    });
+  } catch (error) {
+    dispatch({
+      type: POSTS_ERROR,
+    });
+
+    Swal.fire(`${error}`);
+  }
+};
+
+export const getDesignOfWeek = () => async (dispatch) => {
+  // if(localStorage.token) {
+  //     setAuthToken(localStorage.token)
+  // }
+  try {
+    const res = await axios.get(`${BASE_URL}/post/design-of-week`);
+
+    dispatch({
+      type: DESIGN_OF_WEEK_LOADED,
       payload: res.data,
     });
   } catch (error) {

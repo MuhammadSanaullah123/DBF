@@ -127,7 +127,7 @@ const ProductView2 = ({
                       followCursor
                       placement="bottomStart"
                       speaker={
-                        <Tooltip>
+                        <Tooltip> 
                           <div
                             style={{
                               backround: "red",

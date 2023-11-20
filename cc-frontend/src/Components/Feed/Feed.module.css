@@ -31,6 +31,7 @@ input:focus-visible {
 }
 
 .postCardInner {
+  position: relative;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -70,7 +71,7 @@ input:focus-visible {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 55px;
+  margin-top: 20px;
   position: relative !important;
   height: auto;
 }
@@ -169,25 +170,43 @@ input:focus-visible {
   display: flex;
   align-items: center;
   padding: 0 0px 0 20px;
-  border-right: 1.73574px solid #343434;
+  /* border-right: 1.73574px solid #343434; */
   height: 59.51px;
 }
+.popup {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transition: opacity 0.5s ease;
+}
 
+.popup.hidden {
+  opacity: 0;
+}
 .heaert {
   font-size: 20px;
   fill: #838282;
+  cursor: pointer;
 }
 
 .notiIcon {
   font-size: 20px;
   fill: #838282;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 .shareIcon {
   font-size: 20px;
   fill: #838282;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 .starsArea {

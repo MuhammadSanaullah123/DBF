@@ -38,6 +38,7 @@ function postRouter(io) {
   router.get("/review-post/:id", ioMiddleware, postController.getReviews);
 
   router.get("/design-of-day", ioMiddleware, postController.designOfTheDay);
+  router.get("/design-of-week", ioMiddleware, postController.designOfTheWeek);
   router.get("/design-of-month", ioMiddleware, postController.designOfTheMonth);
   router.get("/design-of-year", ioMiddleware, postController.designOfTheYear);
   router.put(
