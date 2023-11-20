@@ -424,7 +424,7 @@ module.exports.getUserByID = async (req, res, next) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    // Check designerOfDay, month, year
+    // Check designerOfDay,week, month, year
     async function calculateLikesWithinTimeframe(posts, startTime, endTime) {
       let totalLikes = 0;
       for (const post of posts) {
@@ -477,11 +477,21 @@ module.exports.getUserByID = async (req, res, next) => {
       59,
       999
     );
+    // Calculate start and end times for designerOfWeek
+    const startOfWeek = new Date(currentDate);
+    startOfWeek.setDate(currentDate.getDate() - currentDate.getDay());
+    startOfWeek.setHours(0, 0, 0, 0);
+
+    const endOfWeek = new Date(currentDate);
+    endOfWeek.setDate(currentDate.getDate() + (6 - currentDate.getDay()));
+    endOfWeek.setHours(23, 59, 59, 999);
 
     let maxLikesOfDay = 0;
     let maxLikesOfMonth = 0;
     let maxLikesOfYear = 0;
+    let maxLikesOfWeek = 0;
     let designerOfDayUserId = null;
+    let designerOfWeekUserId = null;
     let designerOfMonthUserId = null;
     let designerOfYearUserId = null;
 
@@ -495,6 +505,17 @@ module.exports.getUserByID = async (req, res, next) => {
       if (likesToday > maxLikesOfDay) {
         maxLikesOfDay = likesToday;
         designerOfDayUserId = user._id;
+      }
+
+      // Calculate likes for designerOfWeek
+      const likesThisWeek = await calculateLikesWithinTimeframeForUser(
+        user._id,
+        startOfWeek,
+        endOfWeek
+      );
+      if (likesThisWeek > maxLikesOfWeek) {
+        maxLikesOfWeek = likesThisWeek;
+        designerOfWeekUserId = user._id;
       }
 
       // Calculate likes for designerOfMonth
@@ -524,19 +545,25 @@ module.exports.getUserByID = async (req, res, next) => {
     if (designerOfDayUserId) {
       await User.updateOne(
         { _id: designerOfDayUserId },
-        { designerOfDay: true }
+        { $inc: { designerOfDay: 1 } }
+      );
+    }
+    if (designerOfWeekUserId) {
+      await User.updateOne(
+        { _id: designerOfWeekUserId },
+        { $inc: { designerOfWeek: 1 } }
       );
     }
     if (designerOfMonthUserId) {
       await User.updateOne(
         { _id: designerOfMonthUserId },
-        { designerOfMonth: true }
+        { $inc: { designerOfMonth: 1 } }
       );
     }
     if (designerOfYearUserId) {
       await User.updateOne(
         { _id: designerOfYearUserId },
-        { designerOfYear: true }
+        { $inc: { designerOfYear: 1 } }
       );
     }
 

@@ -232,30 +232,68 @@ const ProfilerHead = ({
                     </div>
                   </div>
                   <div style={{ display: "flex" }}>
-                    {user?.designerOfDay && (
+                    {user?.designerOfDay > 0 && (
+                      <div className={styles.awardArea}>
+                        <div className={styles.awardText}>
+                          <i
+                            className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.copperTrophy}`}
+                          ></i>
+                          {user?.designerOfDay > 1 && (
+                            <div className={styles.xDivCopper}>
+                              <p className={styles.xDivp}>
+                                x{user?.designerOfDay}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    {user?.designerOfWeek > 0 && (
                       <div className={styles.awardArea}>
                         <div className={styles.awardText}>
                           <i
                             className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.bronzeTrophy}`}
+                            s
                           ></i>
+                          {user?.designerOfWeek > 1 && (
+                            <div className={styles.xDivBronze}>
+                              <p className={styles.xDivp}>
+                                x{user?.designerOfWeek}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}
-                    {user?.designerOfMonth && (
+                    {user?.designerOfMonth > 0 && (
                       <div className={styles.awardArea}>
                         <div className={styles.awardText}>
                           <i
                             className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.silverTrophy}`}
                           ></i>
+                          {user?.designerOfMonth > 1 && (
+                            <div className={styles.xDivSilver}>
+                              <p className={styles.xDivp}>
+                                x{user?.designerOfMonth}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}
-                    {user?.designerOfYear && (
+                    {user?.designerOfYear > 0 && (
                       <div className={styles.awardArea}>
                         <div className={styles.awardText}>
                           <i
                             className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.goldTrophy}`}
                           ></i>
+                          {user?.designerOfYear > 1 && (
+                            <div className={styles.xDivGold}>
+                              <p className={styles.xDivp}>
+                                x{user?.designerOfYear}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}

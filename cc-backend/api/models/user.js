@@ -124,16 +124,20 @@ const userSchema = mongoose.Schema(
       default: 0,
     },
     designerOfDay: {
-      type: Boolean,
-      default: false,
+      type: Number,
+      default: 1,
+    },
+    designerOfWeek: {
+      type: Number,
+      default: 1,
     },
     designerOfMonth: {
-      type: Boolean,
-      default: false,
+      type: Number,
+      default: 1,
     },
     designerOfYear: {
-      type: Boolean,
-      default: false,
+      type: Number,
+      default: 1,
     },
   },
 
