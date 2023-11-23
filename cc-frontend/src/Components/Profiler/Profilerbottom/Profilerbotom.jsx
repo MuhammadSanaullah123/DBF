@@ -4,8 +4,8 @@ import styles from "./Profilerbottom.module.css";
 // React Icons
 import { IoIosFunnel } from "react-icons/io";
 // API
-import { getUserById } from "../../../actions/user";
-
+import { getUserById, get } from "../../../actions/user";
+import { GetLoggedInUser } from "../../../actions/auth";
 // Redux
 import store from "../../../store";
 import { Provider } from "react-redux";
@@ -17,7 +17,11 @@ import { RotatingLines } from "react-loader-spinner";
 const Profilerbotom = ({ auth: { loading, user }, user: { users } }) => {
   const [option, setOption] = useState("Design");
   useEffect(() => {
-    if (id != "me") store.dispatch(getUserById(id));
+    if (id != "me") {
+      store.dispatch(getUserById(id));
+    } else {
+      store.dispatch(GetLoggedInUser());
+    }
   }, []);
 
   const url = window.location.href;

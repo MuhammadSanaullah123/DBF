@@ -48,8 +48,12 @@ const ProfilerHead = ({
   const handleShowPicture = () => setShowPicture(true);
 
   useEffect(() => {
-    store.dispatch(GetLoggedInUser());
-    if (id != "me") store.dispatch(getUserById(id));
+    if (id != "me") {
+      store.dispatch(getUserById(id));
+    } else {
+      store.dispatch(GetLoggedInUser());
+    }
+
     // Check number of likes
 
     if (profile) {
@@ -86,7 +90,7 @@ const ProfilerHead = ({
   };
   return (
     <>
-      {loading ? (
+      {loading || (id === "me" && loading) || (id !== "me" && !users?._id) ? (
         <div style={{ width: "100vw", textAlign: "center" }}>
           <RotatingLines
             strokeColor="#00e5be"
@@ -137,15 +141,28 @@ const ProfilerHead = ({
             )}
           </div>
           <div className={styles.infoArea}>
-            <div className={styles.imagesArea}>
-              <img className={styles.imagesOuter} src={user?.image} alt="" />
-              <div className={styles.profileNmae}>
-                {user?.firstName + " " + user?.lastName}
+            {id != "me" ? (
+              <div className={styles.imagesArea}>
+                <img className={styles.imagesOuter} src={users?.image} alt="" />
+                <div className={styles.profileNmae}>
+                  {users?.firstName + " " + users?.lastName}
+                </div>
+                <div className={styles.profilTextDeatail}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
               </div>
-              <div className={styles.profilTextDeatail}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            ) : (
+              <div className={styles.imagesArea}>
+                <img className={styles.imagesOuter} src={user?.image} alt="" />
+                <div className={styles.profileNmae}>
+                  {user?.firstName + " " + user?.lastName}
+                </div>
+                <div className={styles.profilTextDeatail}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
               </div>
-            </div>
+            )}
+
             <div className={styles.acountDetail}>
               {id != "me" ? (
                 <>
@@ -174,30 +191,68 @@ const ProfilerHead = ({
                     </div>
                   </div>
                   <div style={{ display: "flex" }}>
-                    {user?.designerOfDay && (
+                    {users?.designerOfDay > 0 && (
+                      <div className={styles.awardArea}>
+                        <div className={styles.awardText}>
+                          <i
+                            className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.copperTrophy}`}
+                          ></i>
+                          {users?.designerOfDay > 1 && (
+                            <div className={styles.xDivCopper}>
+                              <p className={styles.xDivp}>
+                                x{users?.designerOfDay}
+                              </p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                    {users?.designerOfWeek > 0 && (
                       <div className={styles.awardArea}>
                         <div className={styles.awardText}>
                           <i
                             className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.bronzeTrophy}`}
+                            s
                           ></i>
+                          {users?.designerOfWeek > 1 && (
+                            <div className={styles.xDivBronze}>
+                              <p className={styles.xDivp}>
+                                x{users?.designerOfWeek}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}
-                    {user?.designerOfMonth && (
+                    {users?.designerOfMonth > 0 && (
                       <div className={styles.awardArea}>
                         <div className={styles.awardText}>
                           <i
                             className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.silverTrophy}`}
                           ></i>
+                          {users?.designerOfMonth > 1 && (
+                            <div className={styles.xDivSilver}>
+                              <p className={styles.xDivp}>
+                                x{users?.designerOfMonth}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}
-                    {user?.designerOfYear && (
+                    {users?.designerOfYear > 0 && (
                       <div className={styles.awardArea}>
                         <div className={styles.awardText}>
                           <i
                             className={`fa-solid fa-trophy ${styles.awardTrophy} ${styles.goldTrophy}`}
                           ></i>
+                          {users?.designerOfYear > 1 && (
+                            <div className={styles.xDivGold}>
+                              <p className={styles.xDivp}>
+                                x{users?.designerOfYear}
+                              </p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )}

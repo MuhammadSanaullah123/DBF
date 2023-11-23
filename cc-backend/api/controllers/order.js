@@ -26,7 +26,7 @@ module.exports.createOrder = async (req, res, next) => {
     console.log("ORDERITEMS");
     console.log(orderItems);
     // Create an array of order items
-    console.log("req.body>>>>>", req.body);
+    console.log("req.body>>>>>", req.body); 
     const orderItemsArray = orderItems.map((item) => {
       const postId = item.post._id;
       const image = item.post.image;

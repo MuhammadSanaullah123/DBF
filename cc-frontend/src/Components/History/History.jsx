@@ -54,7 +54,7 @@ const History = ({ posts: { loading, posts }, auth: { user }, addLike }) => {
     setShowCart(!showCart);
   };
 
-  console.log(postsHook);
+  console.log(user);
   return (
     <>
       <div className={styles.feedOuter}>
