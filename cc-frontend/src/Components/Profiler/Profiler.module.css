@@ -1,8 +1,8 @@
-
-
-.profilerOuter{
-    display: flex;
-    flex-direction: column;
-    background: #1c1c1c;
-    width: 100%;
+.profilerOuter {
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }

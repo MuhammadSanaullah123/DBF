@@ -1,51 +1,53 @@
 .inboxWrapper {
-    background-color: #1c1c1c;
+  background-color: #1c1c1c;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .titleName {
-    color: #fff;
-    font-size: 28px;
-    font-weight: 600;
-    margin-left: 10px;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 10px;
 }
 
 .topNameWrap {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .subHeading {
-    font-size: 24px;
-    color: #fff;
-    font-weight: 600;
-    margin: 40px 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  margin: 40px 0;
 }
 
 .messagesWrapper {
-    max-height: 800px;
-    min-height: 800px;
-    overflow-y: scroll;
-    padding: 0 15px;
-    margin-bottom: 100px;
+  max-height: 800px;
+  min-height: 800px;
+  overflow-y: scroll;
+  padding: 0 15px;
+  margin-bottom: 100px;
 }
 
 .conversationName {
-    color: #fff;
-    margin-left: 20px;
-    font-size: 22px;
+  color: #fff;
+  margin-left: 20px;
+  font-size: 22px;
 }
 
 .conversationImg {
-    border-radius: 50%;
-    border: 1px solid #fff;
-    width: 70px;
-    height: 70px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 70px;
+  height: 70px;
 }
 
 .conversationsWrapper {
-    display: flex;
+  display: flex;
 }
 
 .sendWrapper {
-    align-self: center;
+  align-self: center;
 }

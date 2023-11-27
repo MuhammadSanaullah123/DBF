@@ -1,825 +1,748 @@
 .paymentOuter {
-    display: flex;
-    flex-direction: column;
-    background: #1c1c1c;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-
 .LocationInformat {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 100%;
-    max-width: 1216px;
-    padding: 40px 15px 0 15px;
-    margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1216px;
+  padding: 40px 15px 0 15px;
+  margin: auto;
 }
 
 .locationTexts {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .LocationText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
-
 
 .addressDetail {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 31px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 31px;
+  color: #ffffff;
 }
 
-
 .buttonconfirm {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19.2229px;
-    line-height: 26px;
-    color: #FFFFFF;
-    background: #00E5BE;
-    box-shadow: -2.96077px 2.96077px 10.3627px rgba(0, 229, 190, 0.25);
-    border-radius: 7.40191px;
-    width: 161px;
-    height: 44.5px;
-    border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.2229px;
+  line-height: 26px;
+  color: #ffffff;
+  background: #00e5be;
+  box-shadow: -2.96077px 2.96077px 10.3627px rgba(0, 229, 190, 0.25);
+  border-radius: 7.40191px;
+  width: 161px;
+  height: 44.5px;
+  border: none;
 }
 
 .itemsArea {
-    display: flex;
-    flex-direction: column;
-    margin: 50px auto 0 auto;
-    width: 100%;
-    max-width: 1216px;
-    padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 0 auto;
+  width: 100%;
+  max-width: 1216px;
+  padding: 0 15px;
 }
-
 
 .itemsText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
-
 .itemsCardArea {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .itemsCard {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 12px;
 }
 
-
 .imageArea {
-    width: 381.29px;
-    height: 379.31px;
-    position: relative;
+  width: 381.29px;
+  height: 379.31px;
+  position: relative;
 }
 
 .cardImg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .designername {
-    font-family: 'The Girl Next Door';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14.1713px;
-    line-height: 26px;
-    color: #1C1C1C;
-    background: #00E5BE;
-    border-radius: 3.58527px 0px 13.8272px 3.58527px;
-    width: 133.45px;
-    height: 26.69px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "The Girl Next Door";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.1713px;
+  line-height: 26px;
+  color: #1c1c1c;
+  background: #00e5be;
+  border-radius: 3.58527px 0px 13.8272px 3.58527px;
+  width: 133.45px;
+  height: 26.69px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .productName {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 34px;
-    color: #FFFFFF;
-    margin-top: 19px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-top: 19px;
 }
-
 
 .priceItem {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 35px;
-    line-height: 48px;
-    color: #FFFFFF;
-    margin-top: 3px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 48px;
+  color: #ffffff;
+  margin-top: 3px;
 }
-
 
 .getItArea {
-    display: flex;
-    margin-top: 55px;
-    align-items: center;
-    width: 100%;
-    max-width: 1216px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  margin-top: 55px;
+  align-items: center;
+  width: 100%;
+  max-width: 1216px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .getText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
-
 .expectedText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 34px;
-    color: #FFFFFF;
-    margin-left: 19px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 34px;
+  color: #ffffff;
+  margin-left: 19px;
 }
 
 .centerImage {
-    width: 100%;
-    max-width: 1095px;
-    padding: 50px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 392px;
-
+  width: 100%;
+  max-width: 1095px;
+  padding: 50px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 392px;
 }
 
 .centImage {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
-
-
 
 .inputsArea {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
-
 
 .coupnInput {
-    width: 678px;
-    height: 49px;
-    background: #3D3D3D;
-    border-radius: 6px;
-    padding-left: 15px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    padding-right: 10px;
-    border: none;
+  width: 678px;
+  height: 49px;
+  background: #3d3d3d;
+  border-radius: 6px;
+  padding-left: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  padding-right: 10px;
+  border: none;
 }
 
-.coupnInput::placeholder{
-    background: #3D3D3D;
-    border-radius: 6px;
-    padding-left: 0px;
-    font-family: 'Inter';
-    font-style: normal;
+.coupnInput::placeholder {
+  background: #3d3d3d;
+  border-radius: 6px;
+  padding-left: 0px;
+  font-family: "Inter";
+  font-style: normal;
 }
 
-.applyButton{
-    width: 144px;
-height: 49px;
-background: #00E5BE;
-box-shadow: 0px 4px 6px rgba(0, 229, 190, 0.32);
-border-radius: 6px;
-margin-left: 36px;
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 23.76px;
-line-height: 32px;
-color: #FFFFFF;
-border: none;
+.applyButton {
+  width: 144px;
+  height: 49px;
+  background: #00e5be;
+  box-shadow: 0px 4px 6px rgba(0, 229, 190, 0.32);
+  border-radius: 6px;
+  margin-left: 36px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.76px;
+  line-height: 32px;
+  color: #ffffff;
+  border: none;
 }
 
-
-
-
-.totalArea{
-    display: flex;
-    flex-direction: column;
-width: 100%;
-max-width: 796px;
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;
-padding-top: 42px;
+.totalArea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 796px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 42px;
 }
 
-
-.subTotal{
-    display: flex;
-    margin-top: 34px;
-    justify-content: space-between;
-    align-items: center;
+.subTotal {
+  display: flex;
+  margin-top: 34px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-.subHeading{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 38px;
-color: #FFFFFF;
+.subHeading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #ffffff;
 }
 
-.priceHeading{
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 38px;
-    color: #FFFFFF;
+.priceHeading {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 38px;
+  color: #ffffff;
 }
 
-
-.cardsImges{
-    display: flex;
-    margin-top: 77px;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.cardsImges {
+  display: flex;
+  margin-top: 77px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.visa1{
-    width: 86px;
-    height: 86px;
+.visa1 {
+  width: 86px;
+  height: 86px;
 }
 
-.visa2{
-    width: 112px;
-    height: 34px;
+.visa2 {
+  width: 112px;
+  height: 34px;
 }
 
-.visa3{
-    width: 127px;
-    height: 54px;
+.visa3 {
+  width: 127px;
+  height: 54px;
 }
 
-.visa4{
-    width: 131px;
-    height: 53px;
+.visa4 {
+  width: 131px;
+  height: 53px;
 }
-.visa5{
-    width: 246px;
-    height: 68px;
+.visa5 {
+  width: 246px;
+  height: 68px;
 }
 .buttonsParent {
-    align-self: center;
+  align-self: center;
 }
 .buttonWrapper {
-    display: flex;
-    justify-content: space-between;
-    min-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  min-width: 900px;
 }
 .checkout {
-    margin: 37px auto 103px auto;
-    padding: 10px 15px 10px 15px;
-    background: none;
-    border-radius: 9.14895px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23.76px;
-    line-height: 32px;
-    color: #00E5BE;
-    border: 1px solid #00E5BE;
+  margin: 37px auto 103px auto;
+  padding: 10px 15px 10px 15px;
+  background: none;
+  border-radius: 9.14895px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23.76px;
+  line-height: 32px;
+  color: #00e5be;
+  border: 1px solid #00e5be;
 }
-.checkOut{
-    margin: 37px auto 103px auto;
-    padding: 10px 15px 10px 15px;
-    background: #00E5BE;
-    box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
-    border-radius: 9.14895px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23.76px;
-    line-height: 32px;
-    color: #FFFFFF;
-    border: none;
-}
-
-.cross{
-    position: absolute;
-    top: 17px;
-    right: 15px;
-    width: 25px;
-    height: 25px;
+.checkOut {
+  margin: 37px auto 103px auto;
+  padding: 10px 15px 10px 15px;
+  background: #00e5be;
+  box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
+  border-radius: 9.14895px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.76px;
+  line-height: 32px;
+  color: #ffffff;
+  border: none;
 }
 
+.cross {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+}
 
+@media (max-width: 1350px) {
+  .centerImage {
+    max-width: 1000px;
+    height: 349px;
+  }
 
+  .LocationText {
+    font-size: 28px;
+    line-height: 36px;
+  }
 
-@media (max-width:1350px) {
-
-    .centerImage {
-        max-width: 1000px;
-        height: 349px;
-    }
-
-
-    .LocationText{
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-.addressDetail{
+  .addressDetail {
     font-size: 21px;
     line-height: 26px;
-}
+  }
 
-
-.imageArea{
+  .imageArea {
     width: 348.29px;
     height: 348.31px;
-}
+  }
 
-
-.productName{
+  .productName {
     font-size: 23px;
     line-height: 28px;
-}
+  }
 
-.priceItem{
+  .priceItem {
     font-size: 28px;
     line-height: 32px;
-}
+  }
 
-.expectedText{
+  .expectedText {
     font-size: 20px;
     line-height: 34px;
-}
+  }
 
-.coupnInput{
+  .coupnInput {
     width: 516px;
+  }
 }
 
+@media (max-width: 1150px) {
+  .centerImage {
+    max-width: 870px;
+    height: 281px;
+    padding: 30px 15px;
+  }
 
+  .LocationText {
+    font-size: 22px;
+    line-height: 30px;
+  }
 
-
-}
-
-
-@media (max-width:1150px) {
-
-    .centerImage {
-        max-width: 870px;
-        height: 281px;
-        padding: 30px 15px;
-    }
-
-    .LocationText{
-        font-size: 22px;
-        line-height: 30px;
-    }
-
-.addressDetail{
-  
+  .addressDetail {
     font-size: 18px;
     line-height: 22px;
+  }
 
-}
-
-.itemsArea{
+  .itemsArea {
     margin-top: 30px;
-}
+  }
 
-
-
-.imageArea{
+  .imageArea {
     width: 300.29px;
     height: 300.31px;
-}
+  }
 
-
-.productName{
+  .productName {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
-.priceItem{
+  .priceItem {
     font-size: 23px;
     line-height: 28px;
-}
+  }
 
-.expectedText{
+  .expectedText {
     font-size: px;
     line-height: 34px;
-}
+  }
 
-.buttonconfirm{
+  .buttonconfirm {
     width: 146px;
     height: 44.5px;
     font-size: 17.2229px;
     line-height: 23px;
-}
+  }
 
-.coupnInput{
+  .coupnInput {
     width: 492px;
     padding-left: 20px;
-}
+  }
 
-.applyButton{
+  .applyButton {
     width: 134px;
     height: 46px;
     font-size: 19.76px;
     line-height: 29px;
-}
+  }
 
-.subHeading{
+  .subHeading {
     font-size: 24px;
     line-height: 30px;
-}
+  }
 
-
-.priceHeading{
+  .priceHeading {
     font-size: 24px;
     line-height: 30px;
+  }
 }
 
-}
+@media (max-width: 992px) {
+  .centerImage {
+    max-width: 666px;
+    height: 256px;
+  }
 
-@media (max-width:992px) {
+  .LocationText {
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-    .centerImage {
-        max-width: 666px;
-        height: 256px;
-    }
-
-
-    .LocationText{
-        font-size: 18px;
-        line-height: 22px;
-    }
-
-.addressDetail{
-  
+  .addressDetail {
     font-size: 15px;
     line-height: 18px;
+  }
 
-}
-
-.itemsArea{
+  .itemsArea {
     margin-top: 20px;
-}
+  }
 
-.imageArea{
+  .imageArea {
     width: 250.29px;
     height: 250.31px;
-}
+  }
 
-.designername{
+  .designername {
     width: 117.45px;
     height: 22.69px;
     border-radius: 3.58527px 0px 7.8272px 3.58527px;
     font-size: 11.1713px;
     line-height: 26px;
+  }
 
-}
-
-.cross{
+  .cross {
     width: 15px;
     height: 15px;
     top: 12px;
     right: 8px;
-}
-.productName{
+  }
+  .productName {
     font-size: 15px;
     line-height: 18px;
     margin-top: 10px;
-}
+  }
 
-.priceItem{
+  .priceItem {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
-.expectedText{
+  .expectedText {
     font-size: 15px;
     line-height: 20px;
-}
+  }
 
-.buttonconfirm{
+  .buttonconfirm {
     width: 120px;
     height: 35.5px;
     font-size: 15.2229px;
     line-height: 23px;
-}
+  }
 
-
-.getItArea{
+  .getItArea {
     margin-top: 30px;
-}
+  }
 
-.coupnInput{
+  .coupnInput {
     width: 325px;
     padding-left: 20px;
     height: 40px;
     font-size: 14px;
     line-height: 18px;
-}
+  }
 
-.applyButton{
+  .applyButton {
     width: 110px;
     height: 40px;
     font-size: 15.76px;
     line-height: 20px;
-}
+  }
 
-.subHeading{
+  .subHeading {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
-
-.priceHeading{
+  .priceHeading {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
-.totalArea{
+  .totalArea {
     padding-top: 0;
-}
+  }
 
-
-.visa1{
+  .visa1 {
     width: 60px;
     height: 60px;
-}
+  }
 
-.visa2{
+  .visa2 {
     width: 87px;
     height: 26px;
+  }
 
-}
-
-.visa3{
+  .visa3 {
     width: 102px;
     height: 46px;
-}
+  }
 
-.visa4{
+  .visa4 {
     width: 110px;
     height: 43px;
-
-}
-.visa5{
+  }
+  .visa5 {
     width: 178px;
     height: 54px;
-}
+  }
 
-.cardsImges{
+  .cardsImges {
     margin-top: 40px;
-}
+  }
 
-.totalArea{
+  .totalArea {
     max-width: 581px;
-}
+  }
 
-.checkOut{
+  .checkOut {
     font-size: 19.76px;
     line-height: 28px;
     width: 165px;
     height: 52px;
+  }
 }
 
+@media (max-width: 767px) {
+  .centerImage {
+    max-width: 500px;
+    height: 200px;
+  }
 
-}
+  .LocationText {
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-
-@media (max-width:767px) {
-
-
-    .centerImage {
-        max-width: 500px;
-        height: 200px
-    }
-
-
-
-
-    .LocationText{
-        font-size: 15px;
-        line-height: 18px;
-    }
-
-.addressDetail{
-  
+  .addressDetail {
     font-size: 12px;
     line-height: 15px;
+  }
 
-}
-
-.itemsArea{
+  .itemsArea {
     margin-top: 15px;
-}
+  }
 
-.imageArea{
+  .imageArea {
     width: 200.29px;
     height: 200.31px;
-}
+  }
 
-.designername{
+  .designername {
     width: 90.45px;
     height: 20.69px;
     border-radius: 3.58527px 0px 7.8272px 3.58527px;
     font-size: 10.1713px;
     line-height: 26px;
+  }
 
-}
-
-.cross{
+  .cross {
     width: 12px;
     height: 12px;
     top: 10px;
     right: 8px;
-}
-.productName{
+  }
+  .productName {
     font-size: 12px;
     line-height: 15px;
     margin-top: 10px;
-}
+  }
 
-.priceItem{
+  .priceItem {
     font-size: 15px;
     line-height: 18px;
-}
+  }
 
-.expectedText{
+  .expectedText {
     font-size: 12px;
     line-height: 15px;
-}
+  }
 
-.buttonconfirm{
+  .buttonconfirm {
     width: 90px;
     height: 30.5px;
     font-size: 12.2229px;
     line-height: 23px;
-}
+  }
 
-
-.getItArea{
+  .getItArea {
     margin-top: 20px;
-}
+  }
 
-
-.subHeading{
+  .subHeading {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
-
-.priceHeading{
+  .priceHeading {
     font-size: 18px;
     line-height: 22px;
-}
+  }
 
-.totalArea{
+  .totalArea {
     padding-top: 0;
-}
+  }
 
-
-.visa1{
+  .visa1 {
     width: 60px;
     height: 60px;
-}
+  }
 
-.visa2{
+  .visa2 {
     width: 87px;
     height: 26px;
+  }
 
-}
-
-.visa3{
+  .visa3 {
     width: 102px;
     height: 46px;
-}
+  }
 
-.visa4{
+  .visa4 {
     width: 82px;
     height: 28px;
-
-}
-.visa5{
+  }
+  .visa5 {
     width: 100px;
     height: 38px;
-}
+  }
 
-.cardsImges{
+  .cardsImges {
     margin-top: 40px;
-}
+  }
 
-.totalArea{
+  .totalArea {
     max-width: 581px;
-}
+  }
 
-.checkOut{
+  .checkOut {
     font-size: 14.76px;
     line-height: 19px;
     width: 135px;
     height: 41px;
     margin-top: 20px;
     margin-bottom: 40px;
+  }
 }
 
-
-
-}
-
-
-
-@media (max-width:460px) {
-
-   .itemsCardArea{
+@media (max-width: 460px) {
+  .itemsCardArea {
     align-items: center;
     justify-content: center;
-   }
-    
+  }
 
-   .visa1{
+  .visa1 {
     width: 50px;
     height: 50px;
-}
+  }
 
-.visa2{
+  .visa2 {
     width: 70px;
     height: 20px;
+  }
 
-}
-
-.visa3{
+  .visa3 {
     width: 91px;
     height: 38px;
-}
+  }
 
-.visa4{
-  
+  .visa4 {
     width: 95px;
     height: 36px;
-
-
-}
-.visa5{
+  }
+  .visa5 {
     width: 139px;
     height: 43px;
-}
+  }
 
-.subTotal{
+  .subTotal {
     margin-top: 20px;
-}
-
+  }
 }

@@ -1,210 +1,187 @@
-
-
-.tosOuter{
-    display: flex;
-    flex-direction: column;
-    background: #1c1c1c;
-    width: 100%;
-    min-height: 100vh;
+.tosOuter {
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.tosInner{
-    display: flex;
-    flex-direction: column;
-width: 100%;
-max-width: 1248px;
-padding: 4vh 15px 50px 15px;
-margin-left: auto;
-margin-right: auto; 
-align-items: center;
+.tosInner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1248px;
+  padding: 4vh 15px 50px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
-
-.webImg{
-    width: 576px;
-height: 174px;
+.webImg {
+  width: 576px;
+  height: 174px;
 }
 
-
-.terms{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 700;
-font-size: 45px;
-line-height: 61px;
-color: #FFFFFF;
-margin-top: 45px;
+.terms {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61px;
+  color: #ffffff;
+  margin-top: 45px;
 }
 
-.destailText{
-    color: #757575;
-font-family: 'Nunito';
-font-style: normal;
-font-weight: 300;
-font-size: 23px;
-line-height: 31px;
-text-align: center;
-margin-top: 8px;
+.destailText {
+  color: #757575;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 31px;
+  text-align: center;
+  margin-top: 8px;
 }
 
-.agreeArea{
-    margin-top: 17px;
-    display: flex;
-    align-items: center;
+.agreeArea {
+  margin-top: 17px;
+  display: flex;
+  align-items: center;
 }
 
-.checkInput{
-    width: 21.89px;
-height: 21.89px;
+.checkInput {
+  width: 21.89px;
+  height: 21.89px;
 }
 
-.aggreText{
-    font-family: 'Nunito';
-font-style: normal;
-font-weight: 500;
-font-size: 20.3264px;
-line-height: 28px;
-color: #EBEBEB;
-margin-left: 15px;
+.aggreText {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.3264px;
+  line-height: 28px;
+  color: #ebebeb;
+  margin-left: 15px;
 }
 
-.continue{
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-color: #FFFFFF;
-width: 176px;
-height: 53px;
-margin-top: 26px;
-margin-bottom: 40px;
-border: none;
-background: #00E5BE;
-box-shadow: 0px 4px 4px rgba(0, 229, 190, 0.25);
-border-radius: 4px;
+.continue {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 176px;
+  height: 53px;
+  margin-top: 26px;
+  margin-bottom: 40px;
+  border: none;
+  background: #00e5be;
+  box-shadow: 0px 4px 4px rgba(0, 229, 190, 0.25);
+  border-radius: 4px;
 }
 
+@media (max-width: 1350px) {
+  .webImg {
+    width: 480px;
+    height: 127px;
+  }
 
-
-@media (max-width:1350px) {
-
-    .webImg{
-        width: 480px;
-        height: 127px;
-    }
-
-.terms{
+  .terms {
     font-size: 38px;
     line-height: 50px;
     margin-top: 30px;
-}
+  }
 
-.destailText{
+  .destailText {
     font-size: 20px;
     line-height: 27px;
-}
-  
-.agreeArea{
+  }
+
+  .agreeArea {
     margin-top: 12px;
+  }
 }
 
+@media (max-width: 992px) {
+  .webImg {
+    width: 400px;
+    height: 100px;
+  }
 
-
-}
-
-
-
-@media (max-width:992px) {
-
-    .webImg{
-        width: 400px;
-        height: 100px;
-    }
-
-.terms{
+  .terms {
     font-size: 30px;
     line-height: 35px;
     margin-top: 20px;
-}
+  }
 
-.destailText{
+  .destailText {
     font-size: 18px;
     line-height: 22px;
-}
-  
-.agreeArea{
-    margin-top: 10px;
-}
+  }
 
-.checkInput{
+  .agreeArea {
+    margin-top: 10px;
+  }
+
+  .checkInput {
     width: 15px;
     height: 15px;
-}
+  }
 
-
-.aggreText{
+  .aggreText {
     font-size: 15px;
     line-height: 20px;
-}
+  }
 
-
-.continue{
+  .continue {
     font-size: 19px;
     line-height: 17px;
-    
+
     width: 150px;
     height: 44px;
-
+  }
 }
 
+@media (max-width: 767px) {
+  .webImg {
+    width: 300px;
+    height: 90px;
+  }
 
-}
-
-
-@media (max-width:767px) {
-
-    .webImg{
-        width: 300px;
-        height: 90px;
-    }
-
-.terms{
+  .terms {
     font-size: 20px;
     line-height: 25px;
     margin-top: 15px;
-}
+  }
 
-.destailText{
+  .destailText {
     font-size: 15px;
     line-height: 18px;
-}
-  
-.agreeArea{
-    margin-top: 10px;
-}
+  }
 
-.checkInput{
+  .agreeArea {
+    margin-top: 10px;
+  }
+
+  .checkInput {
     width: 12px;
     height: 12px;
-}
+  }
 
-
-.aggreText{
+  .aggreText {
     font-size: 12px;
     line-height: 15px;
-}
+  }
 
-
-.continue{
+  .continue {
     font-size: 16px;
     line-height: 18px;
-    
+
     width: 120px;
     height: 35px;
-
-}
-
-
+  }
 }

@@ -135,7 +135,7 @@ export const getAllUsers = () => async dispatch => {
     }
 }
 
-export const getUserById = (userId) => async dispatch => {
+export const getUserById = (userId) => async dispatch => { 
     if(sessionStorage.token) {
         console.log('working?')
         setAuthToken(sessionStorage.token)

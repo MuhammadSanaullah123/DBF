@@ -1,1147 +1,1056 @@
 .checkoutOuter {
-    display: flex;
-    flex-direction: column;
-    background: #1c1c1c;
-    width: 100%;
-
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .productArea {
-    display: flex;
-    padding-top: 30px;
-    width: 100%;
-    max-width: 1216px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  display: flex;
+  padding-top: 30px;
+  width: 100%;
+  max-width: 1216px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 table {
-    border-collapse: collapse;
-    width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 .productImg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .productImgArea {
-    width: 583px;
-    height: 580px;
-    position: relative;
+  width: 583px;
+  height: 580px;
+  position: relative;
 }
-
 
 .productDesinger {
-    font-family: 'The Girl Next Door';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 26.5476px;
-    line-height: 49px;
-    color: #1C1C1C;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #00E5BE;
-    border-radius: 6.71642px 0px 22.903px 6.71642px;
-    width: 250px;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  font-family: "The Girl Next Door";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.5476px;
+  line-height: 49px;
+  color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #00e5be;
+  border-radius: 6.71642px 0px 22.903px 6.71642px;
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-
 
 .detailArea {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
-
 .productName {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40.98px;
-    line-height: 56px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40.98px;
+  line-height: 56px;
+  color: #ffffff;
 }
 
 .productPrice {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 60.18px;
-    line-height: 82px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 60.18px;
+  line-height: 82px;
+  color: #ffffff;
 }
 
-
 .solderby {
-    margin-top: 41px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40.98px;
-    line-height: 56px;
-    color: #FFFFFF;
+  margin-top: 41px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40.98px;
+  line-height: 56px;
+  color: #ffffff;
 }
 
 .soldername {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 30px;
-    line-height: 41px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
 }
 
 .sendToArea {
-    margin-top: 58px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1216px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1216px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .deliverText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
-
 .customerDetail {
-    display: flex;
-    margin-top: 24px;
-    align-items: center;
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
 }
 
 .clienimgOutert {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: radial-gradient(50% 50% at 50% 50%, #363636 0%, #373737 100%);
-    border: 1.90534px solid #00E5BE;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(50% 50% at 50% 50%, #363636 0%, #373737 100%);
+  border: 1.90534px solid #00e5be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .clintImg {
-    width: 33.8px;
-    height: 34.65px;
+  width: 33.8px;
+  height: 34.65px;
 }
 
 .clintName {
-    padding-left: 17px;
-    padding-right: 28px;
-    border-right: 2px solid #858585;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+  padding-left: 17px;
+  padding-right: 28px;
+  border-right: 2px solid #858585;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
 }
-
 
 .address {
-    padding-left: 28px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+  padding-left: 28px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
-
 .recieveArea {
-    display: flex;
-    align-items: center;
-    margin-top: 55px;
-
+  display: flex;
+  align-items: center;
+  margin-top: 55px;
 }
 
 .getIT {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
-
 .recieveTime {
-    margin-left: 19px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+  margin-left: 19px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
 .cardsArea {
-    display: flex;
-    flex-direction: column;
-    margin-top: 58px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 58px;
 }
-
 
 .cards {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
 
 .card1 {
-    width: 576px;
-    height: 306px;
-    background: #D72A59;
-    border-radius: 21px;
-    margin-top: 24px;
-    padding: 0 56px;
+  width: 576px;
+  height: 306px;
+  background: #d72a59;
+  border-radius: 21px;
+  margin-top: 24px;
+  padding: 0 56px;
 }
-
 
 .card2 {
-    width: 576px;
-    height: 306px;
-    background: #D72A59;
-    border-radius: 21px;
-    margin-top: 24px;
+  width: 576px;
+  height: 306px;
+  background: #d72a59;
+  border-radius: 21px;
+  margin-top: 24px;
 }
-
 
 .cardBuutons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38px;
 }
-
 
 .button1 {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23.76px;
-    line-height: 32px;
-    color: #FFFFFF;
-    width: 261px;
-    height: 55px;
-    background: #00E5BE;
-    box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
-    border-radius: 9.14895px;
-    border: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.76px;
+  line-height: 32px;
+  color: #ffffff;
+  width: 261px;
+  height: 55px;
+  background: #00e5be;
+  box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
+  border-radius: 9.14895px;
+  border: none;
 }
-
 
 .button2 {
-    margin-top: 15px;
-    border: 2px solid #00E5BE;
-    filter: drop-shadow(-3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25));
-    border-radius: 9.14895px;
-    width: 261px;
-    height: 55px;
-    background: none;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23.76px;
-    line-height: 32px;
-    color: #00E5BE;
+  margin-top: 15px;
+  border: 2px solid #00e5be;
+  filter: drop-shadow(-3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25));
+  border-radius: 9.14895px;
+  width: 261px;
+  height: 55px;
+  background: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.76px;
+  line-height: 32px;
+  color: #00e5be;
 }
 
-
 .costingdetail {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
 }
 
 .costingText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
-
 .costingArea {
-    margin-top: 10px;
-    width: 100%;
-    height: 150px;
-    background: #3D3D3D;
-    border-radius: 21px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+  height: 150px;
+  background: #3d3d3d;
+  border-radius: 21px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .pricDetail {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .pricDetail1 {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
 }
-
 
 .detailText {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 41px;
-    color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
 }
-
 
 .priceDoll {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    color: #FFFFFF;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 41px;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  width: 50%;
 }
-
 
 .continuebutt {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 23.76px;
-    line-height: 32px;
-    color: #FFFFFF;
-    background: #00E5BE;
-    box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
-    border-radius: 9.14895px;
-    margin: 38px auto 58px auto;
-    width: 199px;
-    height: 55px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23.76px;
+  line-height: 32px;
+  color: #ffffff;
+  background: #00e5be;
+  box-shadow: -3.65958px 3.65958px 12.8085px rgba(0, 229, 190, 0.25);
+  border-radius: 9.14895px;
+  margin: 38px auto 58px auto;
+  width: 199px;
+  height: 55px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
-
 .csv {
-    display: flex;
-    margin-top: 34px;
-    align-items: center;
-    padding: 0 45px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 34px;
+  align-items: center;
+  padding: 0 45px;
+  justify-content: space-between;
 }
 
 .csvText {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
 }
 
 .round {
-    width: 79.89px;
-    height: 79.89px;
+  width: 79.89px;
+  height: 79.89px;
 }
 
 .csvInput {
-    width: 164px;
-    height: 51px;
-    margin-top: 45px;
-    margin-left: 200px;
-    border: none;
-    background: #D9D9D9;
-    border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    outline: none;
+  width: 164px;
+  height: 51px;
+  margin-top: 45px;
+  margin-left: 200px;
+  border: none;
+  background: #d9d9d9;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
 }
 
 .cardsInner {
-    display: flex;
-    margin-top: 38px;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 38px;
+  justify-content: space-between;
 }
 
 .yellowPert {
-    width: 107.1px;
-    height: 71.11px;
-    background: #E8D94C;
-    border-radius: 11px;
+  width: 107.1px;
+  height: 71.11px;
+  background: #e8d94c;
+  border-radius: 11px;
 }
 
-
 .cardsNumber {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #FFFFFF;
-    margin-top: 34px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #ffffff;
+  margin-top: 34px;
 }
 
 .cardsOwner {
-    color: #FFFFFF;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
 }
 
 .cardExpri {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
-    color: #FFFFFF;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
 }
 
+@media (max-width: 1350px) {
+  .productImgArea {
+    width: 450px;
+    height: 450px;
+  }
 
-@media (max-width:1350px) {
+  .productDesinger {
+    font-size: 21.5476px;
+    line-height: 41px;
+    width: 205px;
+    height: 46px;
+    border-radius: 6.71642px 0px 16.903px 6.71642px;
+  }
 
+  .detailArea {
+    margin-left: 25px;
+  }
 
-    .productImgArea {
-        width: 450px;
-        height: 450px;
-    }
+  .productName {
+    font-size: 32.98px;
+    line-height: 36px;
+  }
 
-    .productDesinger {
-        font-size: 21.5476px;
-        line-height: 41px;
-        width: 205px;
-        height: 46px;
-        border-radius: 6.71642px 0px 16.903px 6.71642px;
-    }
+  .productPrice {
+    font-size: 30.18px;
+    line-height: 45px;
+  }
 
-    .detailArea {
-        margin-left: 25px;
-    }
+  .solderby {
+    margin-top: 25px;
+    font-size: 22.98px;
+    line-height: 40px;
+  }
 
-    .productName {
-        font-size: 32.98px;
-        line-height: 36px;
-    }
+  .soldername {
+    font-size: 24px;
+    line-height: 26px;
+  }
 
+  .sendToArea {
+    margin-top: 30px;
+  }
 
-    .productPrice {
-        font-size: 30.18px;
-        line-height: 45px;
-    }
+  .deliverText {
+    font-size: 24px;
+    line-height: 29px;
+  }
 
+  .customerDetail {
+    margin-top: 15px;
+  }
 
-    .solderby {
-        margin-top: 25px;
-        font-size: 22.98px;
-        line-height: 40px;
-    }
+  .recieveArea {
+    margin-top: 35px;
+  }
 
+  .getIT {
+    font-size: 24px;
+    line-height: 31px;
+  }
 
+  .recieveTime {
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-    .soldername {
-        font-size: 24px;
-        line-height: 26px;
-    }
+  .card1 {
+    width: 450px;
+    height: 250px;
+    padding: 0 25px;
+  }
 
-    .sendToArea {
-        margin-top: 30px;
-    }
+  .cardsInner {
+    margin-top: 20px;
+  }
 
-    .deliverText {
-        font-size: 24px;
-        line-height: 29px;
-    }
+  .yellowPert {
+    width: 75.1px;
+    height: 46.11px;
+    border-radius: 7px;
+  }
 
-    .customerDetail {
-        margin-top: 15px;
-    }
+  .round {
+    width: 58.89px;
+    height: 59.89px;
+  }
 
+  .cardsNumber {
+    margin-top: 24px;
+    font-size: 23px;
+    line-height: 32px;
+  }
 
-    .recieveArea {
-        margin-top: 35px;
-    }
+  .cardsOwner {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
-    .getIT {
-        font-size: 24px;
-        line-height: 31px;
-    }
+  .cardExpri {
+    font-size: 15px;
+    line-height: 22px;
+  }
 
+  .card2 {
+    width: 450px;
+    height: 250px;
+  }
 
-    .recieveTime {
-        font-size: 15px;
-        line-height: 20px;
-    }
+  .csv {
+    margin-top: 20px;
+  }
 
-    .card1 {
-        width: 450px;
-        height: 250px;
-        padding: 0 25px;
-    }
+  .csvText {
+    font-size: 21px;
+    line-height: 30px;
+  }
 
+  .csvInput {
+    width: 135px;
+    height: 41px;
+    margin-top: 32px;
+    margin-left: 187px;
+  }
 
-    .cardsInner {
-        margin-top: 20px;
-    }
+  .cardBuutons {
+    padding-top: 25px;
+  }
 
-    .yellowPert {
-        width: 75.1px;
-        height: 46.11px;
-        border-radius: 7px;
-    }
+  .button1 {
+    font-size: 14.76px;
+    line-height: 22px;
+    width: 202px;
+    height: 45px;
+  }
 
+  .button2 {
+    width: 214px;
+    height: 49px;
+    font-size: 15.76px;
+    line-height: 25px;
+  }
 
-    .round {
-        width: 58.89px;
-        height: 59.89px;
-    }
-
-
-    .cardsNumber {
-        margin-top: 24px;
-        font-size: 23px;
-        line-height: 32px;
-    }
-
-    .cardsOwner {
-        font-size: 18px;
-        line-height: 25px;
-    }
-
-    .cardExpri {
-        font-size: 15px;
-        line-height: 22px;
-    }
-
-    .card2 {
-        width: 450px;
-        height: 250px;
-    }
-
-    .csv {
-        margin-top: 20px;
-    }
-
-    .csvText {
-        font-size: 21px;
-        line-height: 30px;
-    }
-
-
-    .csvInput {
-        width: 135px;
-        height: 41px;
-        margin-top: 32px;
-        margin-left: 187px;
-    }
-
-
-    .cardBuutons {
-        padding-top: 25px;
-    }
-
-    .button1 {
-        font-size: 14.76px;
-        line-height: 22px;
-        width: 202px;
-        height: 45px;
-    }
-
-
-    .button2 {
-
-        width: 214px;
-        height: 49px;
-        font-size: 15.76px;
-        line-height: 25px;
-    }
-
-.detailText{
+  .detailText {
     font-size: 20px;
     line-height: 28px;
-}
-.costingArea{
+  }
+  .costingArea {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.priceDoll{
+  .priceDoll {
     font-size: 20px;
     line-height: 28px;
-}
+  }
 
-
-.costingdetail{
+  .costingdetail {
     margin-top: 70px;
+  }
 }
 
+@media (max-width: 992px) {
+  .detailText {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .costingdetail {
+    margin-top: 40px;
+  }
 
+  .priceDoll {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .productImgArea {
+    width: 350px;
+    height: 350px;
+  }
+
+  .productDesinger {
+    font-size: 18.5476px;
+    line-height: 25px;
+    width: 180px;
+    height: 40px;
+    border-radius: 6.71642px 0px 13.903px 6.71642px;
+  }
+
+  .detailArea {
+    margin-left: 15px;
+  }
+
+  .productName {
+    font-size: 25.98px;
+    line-height: 30px;
+  }
+
+  .productPrice {
+    font-size: 25.18px;
+    line-height: 45px;
+  }
+
+  .solderby {
+    margin-top: 20px;
+    font-size: 18.98px;
+    line-height: 30px;
+  }
+
+  .soldername {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .sendToArea {
+    margin-top: 20px;
+  }
+
+  .deliverText {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .customerDetail {
+    margin-top: 15px;
+  }
+
+  .recieveArea {
+    margin-top: 20px;
+  }
+
+  .getIT {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .recieveTime {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .clienimgOutert {
+    width: 50px;
+    height: 50px;
+  }
+
+  .clintImg {
+    width: 27.8px;
+    height: 27px;
+  }
+
+  .clintName {
+    padding-left: 17px;
+    padding-right: 16px;
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .address {
+    padding-left: 19px;
+    font-size: 11px;
+    line-height: 27px;
+  }
+
+  .card1 {
+    width: 300px;
+    height: 150px;
+    padding: 0 15px;
+  }
+
+  .cardsInner {
+    margin-top: 15px;
+  }
+
+  .yellowPert {
+    width: 50.1px;
+    height: 30.11px;
+    border-radius: 7px;
+  }
+
+  .round {
+    width: 45.89px;
+    height: 45.89px;
+  }
+
+  .cardsNumber {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cardsOwner {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .cardExpri {
+    font-size: 11px;
+    line-height: 15px;
+  }
+
+  .card2 {
+    width: 300px;
+    height: 150px;
+  }
+
+  .csv {
+    margin-top: 15px;
+  }
+
+  .csvText {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .csvInput {
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    margin-left: 100px;
+  }
+
+  .cardBuutons {
+    padding-top: 20px;
+  }
+
+  .button1 {
+    font-size: 12.76px;
+    line-height: 22px;
+    width: 160px;
+    height: 38px;
+  }
+
+  .button2 {
+    width: 180px;
+    height: 40px;
+    font-size: 12.76px;
+    line-height: 20px;
+  }
+
+  .cardsArea {
+    margin-top: 25px;
+  }
 }
 
+@media (max-width: 767px) {
+  .detailText {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .costingdetail {
+    margin-top: 30px;
+  }
 
+  .priceDoll {
+    font-size: 15px;
+    line-height: 18px;
+  }
 
-
-
-@media (max-width:992px) {
-
-    .detailText{
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .costingdetail{
-        margin-top: 40px;
-    }
-
-    .priceDoll{
-        font-size: 18px;
-        line-height: 22px;
-    }
-    .productImgArea {
-        width: 350px;
-        height: 350px;
-    }
-
-    .productDesinger {
-        font-size: 18.5476px;
-        line-height: 25px;
-        width: 180px;
-        height: 40px;
-        border-radius: 6.71642px 0px 13.903px 6.71642px;
-    }
-
-    .detailArea {
-        margin-left: 15px;
-    }
-
-    .productName {
-        font-size: 25.98px;
-        line-height: 30px;
-    }
-
-
-    .productPrice {
-        font-size: 25.18px;
-        line-height: 45px;
-    }
-
-
-    .solderby {
-        margin-top: 20px;
-        font-size: 18.98px;
-        line-height: 30px;
-    }
-
-
-
-    .soldername {
-        font-size: 24px;
-        line-height: 26px;
-    }
-
-    .sendToArea {
-        margin-top: 20px;
-    }
-
-    .deliverText {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-    .customerDetail {
-        margin-top: 15px;
-    }
-
-
-    .recieveArea {
-        margin-top: 20px;
-    }
-
-    .getIT {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
-
-    .recieveTime {
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    .clienimgOutert {
-        width: 50px;
-        height: 50px
-    }
-
-    .clintImg {
-        width: 27.8px;
-        height: 27px;
-    }
-
-    .clintName {
-        padding-left: 17px;
-        padding-right: 16px;
-        font-size: 15px;
-        line-height: 27px;
-    }
-
-    .address {
-        padding-left: 19px;
-        font-size: 11px;
-        line-height: 27px;
-    }
-
-
-    .card1 {
-        width: 300px;
-        height: 150px;
-        padding: 0 15px;
-    }
-
-
-    .cardsInner {
-        margin-top: 15px;
-    }
-
-    .yellowPert {
-        width: 50.1px;
-        height: 30.11px;
-        border-radius: 7px;
-    }
-
-
-    .round {
-        width: 45.89px;
-        height: 45.89px;
-    }
-
-
-    .cardsNumber {
-        margin-top: 15px;
-        font-size: 16px;
-        line-height: 22px;
-    }
-
-    .cardsOwner {
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    .cardExpri {
-        font-size: 11px;
-        line-height: 15px;
-    }
-
-    .card2 {
-        width: 300px;
-        height: 150px;
-    }
-
-    .csv {
-        margin-top: 15px;
-    }
-
-    .csvText {
-        font-size: 17px;
-        line-height: 22px;
-    }
-
-
-    .csvInput {
-        width: 100px;
-        height: 30px;
-        margin-top: 25px;
-        margin-left: 100px;
-    }
-
-
-    .cardBuutons {
-        padding-top: 20px;
-    }
-
-    .button1 {
-        font-size: 12.76px;
-        line-height: 22px;
-        width: 160px;
-        height: 38px;
-    }
-
-
-    .button2 {
-
-        width: 180px;
-        height: 40px;
-        font-size: 12.76px;
-        line-height: 20px;
-    }
-
-    .cardsArea {
-        margin-top: 25px;
-    }
-
-
-
-}
-
-@media (max-width:767px) {
-
-    .detailText{
-        font-size: 15px;
-        line-height: 18px;
-    }
-    .costingdetail{
-        margin-top: 30px;
-    }
-
-    .priceDoll{
-        font-size: 15px;
-        line-height: 18px;
-    }
-
-
-.costingArea{
+  .costingArea {
     height: 100px;
-}
+  }
 
-    .productImgArea {
-        width: 250px;
-        height: 250px;
-    }
+  .productImgArea {
+    width: 250px;
+    height: 250px;
+  }
 
-    .productDesinger {
-        font-size: 13.5476px;
-        line-height: 20px;
-        width: 130px;
-        height: 30px;
-        border-radius: 6.71642px 0px 9.903px 6.71642px;
-    }
+  .productDesinger {
+    font-size: 13.5476px;
+    line-height: 20px;
+    width: 130px;
+    height: 30px;
+    border-radius: 6.71642px 0px 9.903px 6.71642px;
+  }
 
-    .detailArea {
-        margin-left: 10px;
-    }
+  .detailArea {
+    margin-left: 10px;
+  }
 
-    .productName {
-        font-size: 17.98px;
-        line-height: 22px;
-    }
+  .productName {
+    font-size: 17.98px;
+    line-height: 22px;
+  }
 
+  .productPrice {
+    font-size: 18.18px;
+    line-height: 25px;
+  }
 
-    .productPrice {
-        font-size: 18.18px;
-        line-height: 25px;
-    }
+  .solderby {
+    margin-top: 15px;
+    font-size: 14.98px;
+    line-height: 20px;
+  }
 
+  .soldername {
+    font-size: 18px;
+    line-height: 22px;
+  }
 
-    .solderby {
-        margin-top: 15px;
-        font-size: 14.98px;
-        line-height: 20px;
-    }
+  .sendToArea {
+    margin-top: 20px;
+  }
 
+  .deliverText {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
+  .customerDetail {
+    margin-top: 15px;
+  }
 
-    .soldername {
-        font-size: 18px;
-        line-height: 22px;
-    }
+  .recieveArea {
+    margin-top: 20px;
+  }
 
-    .sendToArea {
-        margin-top: 20px;
-    }
+  .getIT {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    .deliverText {
-        font-size: 16px;
-        line-height: 20px;
-    }
+  .recieveTime {
+    font-size: 11px;
+    line-height: 17px;
+  }
 
-    .customerDetail {
-        margin-top: 15px;
-    }
+  .clienimgOutert {
+    width: 50px;
+    height: 50px;
+  }
 
+  .clintImg {
+    width: 27.8px;
+    height: 27px;
+  }
 
-    .recieveArea {
-        margin-top: 20px;
-    }
+  .clintName {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    line-height: 18px;
+  }
 
-    .getIT {
-        font-size: 16px;
-        line-height: 20px;
-    }
+  .address {
+    padding-left: 10px;
+    font-size: 10px;
+    line-height: 20px;
+  }
 
+  .card1 {
+    width: 250px;
+    height: 150px;
+    padding: 0 20px;
+  }
 
-    .recieveTime {
-        font-size: 11px;
-        line-height: 17px;
-    }
+  .cardsInner {
+    margin-top: 20px;
+  }
 
-    .clienimgOutert {
-        width: 50px;
-        height: 50px
-    }
+  .yellowPert {
+    width: 40.1px;
+    height: 25.11px;
+    border-radius: 7px;
+  }
 
-    .clintImg {
-        width: 27.8px;
-        height: 27px;
-    }
+  .round {
+    width: 38.89px;
+    height: 38px;
+  }
 
-    .clintName {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 13px;
-        line-height: 18px;
-    }
+  .cardsNumber {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    .address {
-        padding-left: 10px;
-        font-size: 10px;
-        line-height: 20px;
-    }
+  .cardsOwner {
+    font-size: 12px;
+    line-height: 16px;
+  }
 
+  .cardExpri {
+    font-size: 10px;
+    line-height: 15px;
+  }
 
-    .card1 {
-        width: 250px;
-        height: 150px;
-        padding: 0 20px;
-    }
+  .card2 {
+    width: 250px;
+    height: 150px;
+  }
 
+  .csv {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
 
-    .cardsInner {
-        margin-top: 20px;
-    }
+  .csvText {
+    font-size: 16px;
+    line-height: 19px;
+  }
 
-    .yellowPert {
-        width: 40.1px;
-        height: 25.11px;
-        border-radius: 7px;
-    }
+  .csvInput {
+    width: 80px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 70px;
+  }
 
+  .cardBuutons {
+    padding-top: 20px;
+  }
 
-    .round {
-        width: 38.89px;
-        height: 38px;
-    }
+  .button1 {
+    font-size: 11.76px;
+    line-height: 22px;
+    width: 130px;
+    height: 30px;
+  }
 
+  .button2 {
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+    font-size: 11.76px;
+    line-height: 18px;
+  }
 
-    .cardsNumber {
-        margin-top: 15px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .cardsOwner {
-        font-size: 12px;
-        line-height: 16px;
-    }
-
-    .cardExpri {
-        font-size: 10px;
-        line-height: 15px;
-    }
-
-    .card2 {
-        width: 250px;
-        height: 150px;
-    }
-
-    .csv {
-        margin-top: 20px;
-        padding: 0 20px;
-    }
-
-    .csvText {
-        font-size: 16px;
-        line-height: 19px;
-    }
-
-
-    .csvInput {
-        width: 80px;
-        height: 30px;
-        margin-top: 15px;
-        margin-left: 70px;
-    }
-
-
-    .cardBuutons {
-        padding-top: 20px;
-    }
-
-    .button1 {
-        font-size: 11.76px;
-        line-height: 22px;
-        width: 130px;
-        height: 30px;
-    }
-
-
-    .button2 {
-        margin-top: 10px;
-        width: 150px;
-        height: 35px;
-        font-size: 11.76px;
-        line-height: 18px;
-    }
-
-.continuebutt{
+  .continuebutt {
     width: 130px;
     height: 37px;
     font-size: 16.76px;
     line-height: 24px;
-}
-}
-
-@media (max-width:550px) {
-    .cards{
-        display: flex;
-        flex-direction: column;
-    }
+  }
 }
 
+@media (max-width: 550px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
+@media (max-width: 450px) {
+  .productImgArea {
+    width: 190px;
+    height: 190px;
+  }
 
+  .productDesinger {
+    font-size: 11.5476px;
+    line-height: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 6.71642px 0px 7.903px 6.71642px;
+  }
 
-@media (max-width:450px) {
+  .detailArea {
+    margin-left: 10px;
+  }
 
+  .productName {
+    font-size: 15.98px;
+    line-height: 18px;
+  }
 
-    .productImgArea {
-        width: 190px;
-        height: 190px;
-    }
+  .productPrice {
+    font-size: 15.18px;
+    line-height: 20px;
+  }
 
-    .productDesinger {
-        font-size: 11.5476px;
-        line-height: 20px;
-        width: 100px;
-        height: 25px;
-        border-radius: 6.71642px 0px 7.903px 6.71642px;
-    }
+  .solderby {
+    margin-top: 15px;
+    font-size: 12.98px;
+    line-height: 16px;
+  }
 
-    .detailArea {
-        margin-left: 10px;
-    }
+  .soldername {
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-    .productName {
-        font-size: 15.98px;
-        line-height: 18px;
-    }
+  .sendToArea {
+    margin-top: 15px;
+  }
 
+  .deliverText {
+    font-size: 12px;
+    line-height: 18px;
+  }
 
-    .productPrice {
-        font-size: 15.18px;
-        line-height: 20px;
-    }
+  .customerDetail {
+    margin-top: 10px;
+  }
 
+  .recieveArea {
+    margin-top: 20px;
+  }
 
-    .solderby {
-        margin-top: 15px;
-        font-size: 12.98px;
-        line-height: 16px;
-    }
+  .getIT {
+    font-size: 12px;
+    line-height: 18px;
+  }
 
+  .recieveTime {
+    font-size: 9px;
+    line-height: 12px;
+    margin-left: 10px;
+  }
 
+  .clienimgOutert {
+    width: 50px;
+    height: 50px;
+  }
 
-    .soldername {
-        font-size: 15px;
-        line-height: 20px;
-    }
+  .clintImg {
+    width: 27.8px;
+    height: 27px;
+  }
 
-    .sendToArea {
-        margin-top: 15px;
-    }
+  .clintName {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
 
-    .deliverText {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .customerDetail {
-        margin-top: 10px;
-    }
-
-
-    .recieveArea {
-        margin-top: 20px;
-    }
-
-    .getIT {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-
-    .recieveTime {
-        font-size: 9px;
-        line-height: 12px;
-        margin-left: 10px;
-    }
-
-    .clienimgOutert {
-        width: 50px;
-        height: 50px
-    }
-
-    .clintImg {
-        width: 27.8px;
-        height: 27px;
-    }
-
-    .clintName {
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .address {
-        padding-left: 10px;
-        font-size: 9px;
-        line-height: 20px;
-    }
-
-
+  .address {
+    padding-left: 10px;
+    font-size: 9px;
+    line-height: 20px;
+  }
 }
 
 /* Moyasar Overrride */
-#mysr-form-form-el#mysr-form-form-el#mysr-form-form-el.mysr-form-moyasarForm[payment-form=true] .mysr-form-button {
-    max-width: 900px !important;
+#mysr-form-form-el#mysr-form-form-el#mysr-form-form-el.mysr-form-moyasarForm[payment-form="true"]
+  .mysr-form-button {
+  max-width: 900px !important;
 }
